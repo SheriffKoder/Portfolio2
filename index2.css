@@ -1,0 +1,76 @@
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+body {
+
+}
+
+    .container1 {
+
+        width: 100vw;
+        height: 90vh;
+
+        border-bottom: 5px solid black;
+        background-color: grey;
+
+    }
+
+        .header1 {
+
+            width: 100vw;
+            height: 10vh;
+            min-height: 60px;
+
+
+            border: 2px solid white;
+            background-color: black;
+
+            margin: auto;
+            
+            display: flex;
+
+        }
+
+
+            .header_icon {
+                height: 100%;
+                background-color: #999999;
+                min-width: 75px;
+                border: 2px solid white;
+
+            }
+
+
+            .header_LogoText {
+                height: 100%;
+                background-color: #999999;
+                min-width: 200px;
+                border: 2px solid white;
+
+            }
+            
+
+            .header_space {
+                height: 100%;
+                background-color: #404040;
+                border: 2px solid white;
+
+                flex-grow: 1;
+                flex-shrink: 10;
+
+            }
+
+
+            .header_Navigation {
+                height: 100%;
+                background-color: #999999;
+                border: 2px solid white;
+
+                flex-grow: 2;
+                flex-shrink: 0;
+
+                min-width: 75px;
+            }
+                    
