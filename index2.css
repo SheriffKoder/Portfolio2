@@ -3,7 +3,20 @@
 /*/////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////*/
 
+:root {
+    --clr-backgoundColor-black: hsl(0, 0%, 18%); ;
+    --clr-lightgrey-border: hsl(0, 1%, 80%);
+    --clr-lightgrey-border_needed: hsl(0, 1%, 80%);
+    --clr-lightgrey-text: hsl(0, 0%, 85%);
+    --clr-lightergrey-text: hsl(0, 0%, 95%);
+
+    --clr--contact-background: hsla(0, 0%, 85%, 0.2);
+
+}
+
+
 body {
+
 
 }
 
@@ -12,20 +25,21 @@ body {
         width: 100vw;
         height: 90vh;
 
-        border-bottom: 5px solid black;
-        background-color: grey;
+        border-bottom: 0.1em solid var(--clr-lightgrey-borders);;
+        background-color: var(--clr-backgoundColor-black);
 
     }
 
+        /*/////////////////////////////////////////////////////////////////////////////*/
+        /*/////////////////////////////////////////////////////////////////////////////*/
         .header1 {
 
             width: 100vw;
-            height: 10vh;
+            height: 15vh;
             min-height: 60px;
 
 
-            border: 2px solid white;
-            background-color: black;
+            /*border: 0.1em solid var(--clr-lightgrey-borders);*/
 
             margin: auto;
             
@@ -33,44 +47,155 @@ body {
 
         }
 
-
+            /*/////////////////////////////////////////////////////////////////////////////*/
             .header_icon {
                 height: 100%;
-                background-color: #999999;
-                min-width: 75px;
-                border: 2px solid white;
+                width: 75px;
+                border: 0.1em solid var(--clr-lightgrey-borders);
 
             }
 
+                .header_icon img {
+                    width:30px;
 
+                    margin-top: 25px;
+                    margin-left: 3vw;
+                }
+
+            /*/////////////////////////////////////////////////////////////////////////////*/
             .header_LogoText {
                 height: 100%;
-                background-color: #999999;
                 min-width: 200px;
-                border: 2px solid white;
+                border: 0.1em solid var(--clr-lightgrey-borders);
 
             }
-            
+                .header_LogoText p {
+                    color: var(--clr-lightergrey-text);
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    margin-top: 35px;
+                    margin-left: 10px;
+                    font-weight: 700;
+                    letter-spacing: 0.2em;
 
+                }
+            
+            /*/////////////////////////////////////////////////////////////////////////////*/
             .header_space {
                 height: 100%;
-                background-color: #404040;
-                border: 2px solid white;
+                border: 0.1em solid var(--clr-lightgrey-borders);
 
                 flex-grow: 1;
-                flex-shrink: 10;
+                flex-shrink: 2;
 
             }
 
-
+            /*/////////////////////////////////////////////////////////////////////////////*/
             .header_Navigation {
                 height: 100%;
-                background-color: #999999;
-                border: 2px solid white;
+                border: 0.1em solid var(--clr-lightgrey-borders);
 
                 flex-grow: 2;
                 flex-shrink: 0;
 
                 min-width: 75px;
+
+                padding-top: 30px;
+                padding-right: 30px;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                justify-content: flex-end;
+
+
             }
-                    
+
+                .header_Navigation .header_Navigation_Link {
+                    color: var(--clr-lightgrey-text);
+                    border: 0.1em solid var(--clr-lightgrey-borders);
+
+                    font-size: 12px;
+
+                    height: 2.5em;
+                    width: 120px;
+                    text-align: center;
+
+                    margin: 0px 10px 0px 10px;  
+                    padding-top: .5em;
+                    border-radius: 10px;
+
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                
+
+                }
+
+                
+                .header_Navigation .contact_link {
+                    background-color: var(--clr--contact-background);                
+
+                }
+
+        /*/////////////////////////////////////////////////////////////////////////////*/
+        /*/////////////////////////////////////////////////////////////////////////////*/
+        .header2 {
+            width: 100vw;
+            height: 65vh;
+            border: 0.1em solid var(--clr-lightgrey-borders);
+
+        }
+
+            .header_text {
+                border: 0.1em solid var(--clr-lightgrey-borders);
+
+                height: 100%;
+                width: 40%;
+
+                margin-left: 150px;
+                padding-top: 100px;
+                padding-right: 120px;
+
+            }
+
+            .header_text h4,p {
+                color: var(--clr-lightgrey-text);
+                margin-bottom: 25px;
+            }
+
+            .header_text p {
+
+                font-size: 12px;
+                word-spacing: 0.05em;
+            }
+
+        /*/////////////////////////////////////////////////////////////////////////////*/
+        /*/////////////////////////////////////////////////////////////////////////////*/
+        .header3 {
+            height: 10vh;
+            width: 100%;
+            border: 0.1em solid var(--clr-lightgrey-borders);
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            padding-right: 50px;
+        }
+
+            .social_icon_box {
+
+                width: 25px;
+                height: 25px;
+                border: 0.1em solid var(--clr-lightgrey-border_needed);
+                border-radius: 15px;
+                margin-left: 30px;
+
+                background-color:var(--clr-lightgrey-border_needed);
+                color: var(--clr-backgoundColor-black);
+                text-align: center;
+                font-weight: 800;
+                font-family: sans-serif;
+
+            }
