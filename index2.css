@@ -257,6 +257,7 @@ body {
                 text-transform: uppercase;
                 font-weight: 500;
 
+                
 
             }
 
@@ -366,7 +367,25 @@ body {
 
                     margin: 0 15px;
 
+                    /* text transparent to background and can be given a border with text-shadow */
+                    background-color: var(--clr--contact-background);
+                    color: black;
+                    transform: translate(0%, 0%);
+                    mix-blend-mode: screen;
 
+                    text-shadow: 
+                    -0.025em 0 var(--clr-socialborder),
+                    0.025em 0  var(--clr-socialborder),
+                    0 -0.025em var(--clr-socialborder),
+                    0 0.025em  var(--clr-socialborder);
+
+
+                }
+
+                .social_icon_box p {
+
+                  
+                  
                 }
 
                 .social_icon_box:hover {
