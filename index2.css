@@ -279,12 +279,9 @@ body {
 
             }
 
-            .header_Text_Link {
+            .header_Text_Link, .header_Text_Link::before {
 
-                /*
-                color: var(--clr-lightgrey-text);
-                border: 0.1em solid var(--clr-lightgrey-border-needed);
-*/
+
                 font-size: 12px;
 
                 height: 2.5em;
@@ -296,18 +293,57 @@ body {
 
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
-
-
-                /* style : gradient color */
-                color: white;
-                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
                 font-weight: 300;
-                border: none;
-            
+
+                color: white;
 
             }
 
 
+           .header_Text_Link { /* gradient normal */
+
+                /* light lines button */
+/*               color: var(--clr-lightgrey-text);
+                border: 0.1em solid var(--clr-lightgrey-border-needed);
+*/
+
+                /* style : gradient color */
+                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
+                border: none;
+
+                position: relative;         
+
+
+            }
+
+
+
+                    .header_Text_Link::before { 
+
+                        /*before or after the content of the element */
+                        /* dont work on images because they are content themselves */
+                        content: 'Link1';
+
+                        background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));                position: absolute;
+
+                        top:0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    
+                        height: inherit;
+                        width: inherit;
+
+                        opacity:0;
+                    
+                        z-index: 0;
+                        transition: opacity 200ms linear; /*end steps*/
+                        
+                    }
+
+                    .header_Text_Link:hover::before {
+                        opacity: 1;
+                    }   
 
             .header_Text_Link:hover {
 
@@ -321,15 +357,12 @@ body {
                 */
 
 
-                /* style : gradient color */
+                /* style : gradient color */ /*
                 color: white;
                 background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));
-                transition: background-image 1s ease-in-out;
-                -webkit-transition: background-image 1s ease-in-out;
-
-
                 font-weight: 300;
                 border: none;
+*/
 
                 /* style : enlightened icon */
                 /*
