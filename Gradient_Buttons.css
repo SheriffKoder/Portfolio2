@@ -1,0 +1,158 @@
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+        .Gradient_Link_Background2 {
+
+
+            /* style : to use gradient color to work with the ::before - transparent text */
+            background-image: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,0));
+            border: none;
+
+            /* Gives the transparent text property, Remove for white text */
+            color: black;
+            transform: translate(0%, 0%);
+            mix-blend-mode: screen;
+            font-weight: 600;
+
+            position: relative;         
+
+
+        }
+
+        .Gradient_Link_Background2:hover {
+            color: black !important;        /*activate the transparent text*/
+
+            text-shadow: none;
+
+        }
+
+
+                /*-----------------------------------------------------------------------------*/
+                .Gradient_Link_Background2::before { 
+
+                    /*before or after the content of the element */
+                    /* dont work on images because they are content themselves */
+                    content: ' '; /* Add Text for white text */
+
+                    background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));                
+                    position: absolute;
+
+                    top:0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                
+                    height: inherit;
+                    width: inherit;
+
+                    opacity:0;                    
+
+                    border-radius: 15px;
+                    z-index: -2; /* make 0 for white text */
+                    mix-blend-mode: multiply; /* remove for white text */
+
+                    
+                    transition: opacity 1000ms linear;
+
+                }
+
+                .Gradient_Link_Background2:hover::before {
+                    opacity: 1;
+                }
+
+                .Gradient_Link_Background2::after { 
+
+                    /*before or after the content of the element */
+                    /* dont work on images because they are content themselves */
+                    content: ' '; /* Add Text for white text */
+
+                    background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2), var(--clr-gradient2));                
+                    position: absolute;
+
+                    top:0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                
+                    height: inherit;
+                    width: inherit;
+
+                    opacity:0;                    
+
+                    border-radius: 15px;
+                    z-index: -1; /* make 0 for white text */
+                    mix-blend-mode: screen; /* remove for white text */
+
+                    
+                    transition: opacity 2000ms linear;
+
+                }
+
+                .Gradient_Link_Background2:hover::after {
+                    opacity: 1;
+                }
+
+
+    /*/////////////////////////////////////////////////////////////////////////////*/
+    /*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                .Gradient_Link_Background {
+
+    
+                    font-size: 20px;
+                    font-weight: 900;
+                    padding-top: 0px;
+
+
+                    /* style : to use gradient color to work with the ::before - transparent text */
+                    background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
+                    border: none;
+    
+                    /* Gives the transparent text property, Remove for white text */
+                    color: black;
+                    transform: translate(0%, 0%);
+                    mix-blend-mode: screen;
+    
+                    position: relative;         
+    
+    
+                }
+    
+                        /*-----------------------------------------------------------------------------*/
+                        .Gradient_Link_Background::before { 
+    
+                            /*before or after the content of the element */
+                            /* dont work on images because they are content themselves */
+                            content: ' '; /* Add Text for white text */
+    
+                            background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));                position: absolute;
+    
+                            top:0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                        
+                            height: inherit;
+                            width: inherit;
+    
+                            opacity:0;                    
+    
+                            border-radius: 10px;
+                            z-index: -1; /* make 0 for white text */
+                            mix-blend-mode: multiply; /* remove for white text */
+    
+                            
+                            transition: opacity 1000ms linear;
+    
+                        }
+    
+                        .Gradient_Link_Background:hover::before {
+                            opacity: 1;
+                        }   
+    
+    
+    
+

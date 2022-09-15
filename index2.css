@@ -227,103 +227,6 @@ body {
                 }
 
 
-                .Gradient_Link_Background2 {
-
-                    /* light lines button */
-    /*               color: var(--clr-lightgrey-text);
-                    border: 1.2px solid var(--clr-lightgrey-border-needed);
-    */
-    
-                    /* style : to use gradient color to work with the ::before - transparent text */
-                    background-image: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,0));
-                    border: none;
-    
-                    /* Gives the transparent text property, Remove for white text */
-                    color: black;
-                    transform: translate(0%, 0%);
-                    mix-blend-mode: screen;
-                    font-weight: 600;
-    
-                    position: relative;         
-    
-    
-                }
-
-                .Gradient_Link_Background2:hover {
-                    color: black !important;
-
-                }
-
-    
-                        /*-----------------------------------------------------------------------------*/
-                        .Gradient_Link_Background2::before { 
-    
-                            /*before or after the content of the element */
-                            /* dont work on images because they are content themselves */
-                            content: ' '; /* Add Text for white text */
-    
-                            background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));                
-                            position: absolute;
-    
-                            top:0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                        
-                            height: inherit;
-                            width: inherit;
-    
-                            opacity:0;                    
-    
-                            border-radius: 15px;
-                            z-index: -2; /* make 0 for white text */
-                            mix-blend-mode: multiply; /* remove for white text */
-    
-                            
-                            transition: opacity 1000ms linear;
-    
-                        }
-    
-                        .Gradient_Link_Background2:hover::before {
-                            opacity: 1;
-                        }
-
-                        .Gradient_Link_Background2::after { 
-    
-                            /*before or after the content of the element */
-                            /* dont work on images because they are content themselves */
-                            content: ' '; /* Add Text for white text */
-    
-                            background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2), var(--clr-gradient2));                
-                            position: absolute;
-    
-                            top:0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                        
-                            height: inherit;
-                            width: inherit;
-    
-                            opacity:0;                    
-    
-                            border-radius: 15px;
-                            z-index: -1; /* make 0 for white text */
-                            mix-blend-mode: screen; /* remove for white text */
-    
-                            
-                            transition: opacity 2000ms linear;
-    
-                        }
-    
-                        .Gradient_Link_Background2:hover::after {
-                            opacity: 1;
-                        }
-
-
-
-
-
 
         /*/////////////////////////////////////////////////////////////////////////////*/
         /*/////////////////////////////////////////////////////////////////////////////*/
@@ -385,15 +288,14 @@ body {
 
                 /*set if using light lines button*/
                             
-/*              font-size: 12px;           
+                font-size: 12px;           
                 font-weight: 400; 
                 padding-top: 5px;
-*/                
-
-                font-size: 20px;
-                font-weight: 900;
-                padding-top: 0px;
-
+                
+                /* light lines button */
+                color: var(--clr-lightgrey-text);
+                border: 1.2px solid var(--clr-lightgrey-border-needed);
+    
 
                 height: 30px;
                 width: 120px;
@@ -409,60 +311,6 @@ body {
             }
 
 
-           .Gradient_Link_Background {
-
-                /* light lines button */
-/*               color: var(--clr-lightgrey-text);
-                border: 1.2px solid var(--clr-lightgrey-border-needed);
-*/
-
-                /* style : to use gradient color to work with the ::before - transparent text */
-                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
-                border: none;
-
-                /* Gives the transparent text property, Remove for white text */
-                color: black;
-                transform: translate(0%, 0%);
-                mix-blend-mode: screen;
-
-                position: relative;         
-
-
-            }
-
-                    /*-----------------------------------------------------------------------------*/
-                    .Gradient_Link_Background::before { 
-
-                        /*before or after the content of the element */
-                        /* dont work on images because they are content themselves */
-                        content: ' '; /* Add Text for white text */
-
-                        background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));                position: absolute;
-
-                        top:0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                    
-                        height: inherit;
-                        width: inherit;
-
-                        opacity:0;                    
-
-                        border-radius: 10px;
-                        z-index: -1; /* make 0 for white text */
-                        mix-blend-mode: multiply; /* remove for white text */
-
-                        
-                        transition: opacity 1000ms linear;
-
-                    }
-
-                    .Gradient_Link_Background:hover::before {
-                        opacity: 1;
-                    }   
-
-
             .header_Text_Link:hover {
 
 
@@ -470,12 +318,12 @@ body {
 */                /* remove for white text, remove i used it for some reason but its not necessary */
 
                 /* style : filled color icon */
-                /*
+/*                
                 color: black;
                 background-color: var(--clr-themeColor);
                 font-weight: 400;
                 border: 0.1em solid var(--clr-themeColor);
-                */
+                
 
                 /* style : gradient color on hover */ /*
                 color: white;
@@ -485,14 +333,14 @@ body {
 */
 
                 /* style : enlightened icon */
-                /*
+/*                
                 text-shadow: 0px 0px 10px white;
                 color:white;
                 background-color: var(--clr-themeColor-opacity);
                 border: 0.1em solid var(--clr-themeColor-darker);
                 box-shadow: 0px 0px 1px var(--clr-themeColor-darker), inset 0px 0px 5px var(--clr-themeColor-darker);
                 filter: blur(0.3px);
-                */
+*/                
                 /*background-color: var(--clr--contact-background-hover);*/
 
 
