@@ -1,0 +1,29 @@
+
+        /*Add Transparent overlay from bottom of div */
+        .shadow_overlay:before {
+            content: ' ';
+
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0) ,  rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));                
+            position: absolute;
+
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        
+            height: inherit;
+            width: inherit;
+
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+
+        .menu_only_shadow_overlay {
+
+        /* Add all menu transparent overlay */
+      background-image: linear-gradient( rgba(255, 255, 255, 0.727), rgba(0, 0, 0, 0));
+
+        }
+
+

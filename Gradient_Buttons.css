@@ -1,6 +1,74 @@
 
 
 /*/////////////////////////////////////////////////////////////////////////////*/
+
+            /* Add Gradient Text*/
+            .header_Text_Link.Gradient_Text {
+
+                background: -webkit-linear-gradient(180deg, var(--clr-gradient1), var(--clr-gradient2));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    
+                }
+
+                .Gradient_Text_hover:hover {
+                    background: -webkit-linear-gradient(180deg, var(--clr-gradient1), var(--clr-gradient2));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: none;
+                }
+    
+    /*/////////////////////////////////////////////////////////////////////////////*/
+    
+                /* Add Gradient Border */
+                .Gradient_Border:hover {
+    
+                    /* Gradient Border without Radius */
+    /*              border: 1px solid;
+                    border-image-slice: 1;                  
+                    border-image-source: linear-gradient(to left, var(--clr-gradient1), var(--clr-gradient2));
+                    */
+    
+                    border-color: rgba(0,0,0,0.0);
+                    position: relative;
+
+
+    
+    
+                }
+
+                .Gradient_Border.GB_SizeFix:hover {
+                    height: 33px;
+                    width: 122px;
+                    margin: -1px;
+                    padding-top: 6px;
+                }
+    
+                /* Add Gradient Border with Radius */
+                .Gradient_Border:hover::after {
+                    
+                    content: "";
+                    position: absolute;
+    
+                    background: linear-gradient(to left, var(--clr-gradient1), var(--clr-gradient2));
+                    -webkit-mask: 
+                      linear-gradient(#fff 0 0) content-box, 
+                      linear-gradient(#fff 0 0);
+    
+                    inset: 0;
+                    padding: 1px; /* control the border thickness */
+                    -webkit-mask-composite: xor;
+                            mask-composite: exclude;
+    
+                    border-radius: 10px;
+    
+    
+    
+    
+                }
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////*/
 
         .Gradient_Link_Background2 {

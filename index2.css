@@ -68,7 +68,7 @@ body {
         
         
         
-        background: url("./images/background1.jpg")  rgba(0, 0, 0, 0.8);
+        background: url("./images/background1.jpg")  rgba(0, 0, 0, 0.1);
         background-blend-mode:overlay;
  
         background-size: cover;
@@ -85,7 +85,6 @@ body {
 
 
 
-
         /*/////////////////////////////////////////////////////////////////////////////*/
         /*/////////////////////////////////////////////////////////////////////////////*/
         .header1 {
@@ -98,7 +97,6 @@ body {
             /*border: 0.1em solid var(--clr-lightgrey-borders);*/
 
             margin: auto;
-            
             display: flex;
 
         }
@@ -211,6 +209,7 @@ body {
                     text-shadow: 0px 0px 5px var(--clr-themeColor);
                     background-color: rgba(0,0,0,0.1);
                     border-radius: 13px;
+        
                 }
 
                 
@@ -308,7 +307,9 @@ body {
 
 
                 color: white;
+
             }
+
 
 
             .header_Text_Link:hover {
