@@ -68,7 +68,7 @@ body {
         
         
         
-        background: url("./images/background1.jpg")  rgba(0, 0, 0, 0.1);
+        background: url("./images/background1.jpg")  rgba(0, 0, 0, 0.8);
         background-blend-mode:overlay;
  
         background-size: cover;
@@ -226,6 +226,105 @@ body {
 
                 }
 
+
+                .Gradient_Link_Background2 {
+
+                    /* light lines button */
+    /*               color: var(--clr-lightgrey-text);
+                    border: 1.2px solid var(--clr-lightgrey-border-needed);
+    */
+    
+                    /* style : to use gradient color to work with the ::before - transparent text */
+                    background-image: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,0));
+                    border: none;
+    
+                    /* Gives the transparent text property, Remove for white text */
+                    color: black;
+                    transform: translate(0%, 0%);
+                    mix-blend-mode: screen;
+                    font-weight: 600;
+    
+                    position: relative;         
+    
+    
+                }
+
+                .Gradient_Link_Background2:hover {
+                    color: black !important;
+
+                }
+
+    
+                        /*-----------------------------------------------------------------------------*/
+                        .Gradient_Link_Background2::before { 
+    
+                            /*before or after the content of the element */
+                            /* dont work on images because they are content themselves */
+                            content: ' '; /* Add Text for white text */
+    
+                            background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));                
+                            position: absolute;
+    
+                            top:0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                        
+                            height: inherit;
+                            width: inherit;
+    
+                            opacity:0;                    
+    
+                            border-radius: 15px;
+                            z-index: -2; /* make 0 for white text */
+                            mix-blend-mode: multiply; /* remove for white text */
+    
+                            
+                            transition: opacity 1000ms linear;
+    
+                        }
+    
+                        .Gradient_Link_Background2:hover::before {
+                            opacity: 1;
+                        }
+
+                        .Gradient_Link_Background2::after { 
+    
+                            /*before or after the content of the element */
+                            /* dont work on images because they are content themselves */
+                            content: ' '; /* Add Text for white text */
+    
+                            background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2), var(--clr-gradient2));                
+                            position: absolute;
+    
+                            top:0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                        
+                            height: inherit;
+                            width: inherit;
+    
+                            opacity:0;                    
+    
+                            border-radius: 15px;
+                            z-index: -1; /* make 0 for white text */
+                            mix-blend-mode: screen; /* remove for white text */
+    
+                            
+                            transition: opacity 2000ms linear;
+    
+                        }
+    
+                        .Gradient_Link_Background2:hover::after {
+                            opacity: 1;
+                        }
+
+
+
+
+
+
         /*/////////////////////////////////////////////////////////////////////////////*/
         /*/////////////////////////////////////////////////////////////////////////////*/
         .header2 {
@@ -279,12 +378,14 @@ body {
 
             }
 
+
+            /*/////////////////////////////////////////////////////////////////////////////*/
             .header_Text_Link  {
 
 
                 /*set if using light lines button*/
                             
-/*                font-size: 12px;           
+/*              font-size: 12px;           
                 font-weight: 400; 
                 padding-top: 5px;
 */                
@@ -308,12 +409,12 @@ body {
             }
 
 
-           .header_Text_Link {
+           .Gradient_Link_Background {
 
                 /* light lines button */
-               color: var(--clr-lightgrey-text);
+/*               color: var(--clr-lightgrey-text);
                 border: 1.2px solid var(--clr-lightgrey-border-needed);
-
+*/
 
                 /* style : to use gradient color to work with the ::before - transparent text */
                 background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
@@ -329,9 +430,8 @@ body {
 
             }
 
-
-
-                    .header_Text_Link::before { 
+                    /*-----------------------------------------------------------------------------*/
+                    .Gradient_Link_Background::before { 
 
                         /*before or after the content of the element */
                         /* dont work on images because they are content themselves */
@@ -358,7 +458,7 @@ body {
 
                     }
 
-                    .header_Text_Link:hover::before {
+                    .Gradient_Link_Background:hover::before {
                         opacity: 1;
                     }   
 
@@ -366,8 +466,8 @@ body {
             .header_Text_Link:hover {
 
 
-                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
-                /* remove for white text */
+/*                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
+*/                /* remove for white text, remove i used it for some reason but its not necessary */
 
                 /* style : filled color icon */
                 /*
