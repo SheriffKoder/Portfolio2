@@ -1,0 +1,165 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /*/////////////////////////////////////////////////////////////////////////////*/
+    .header1 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+
+    }
+
+    .header_icon {
+        min-width: 40vw;
+        padding-top: 1.5vw;
+        
+
+    }
+
+    .header_icon img {
+        width:4vw;
+
+        margin-top: 3.2vw;
+        margin-left: 4vw;
+
+        float: right;
+
+    }
+
+    .header_LogoText {
+        min-width: 30vw;
+
+    }
+
+    .header_LogoText p {
+        padding-top: 1vh;
+        font-size: 2vw;
+
+    }
+
+    .header_space {
+        max-width: 15vw;
+    }
+
+    .header_Navigation {
+        max-width: 15vw;
+    }
+
+    .header_Navigation_Link {
+        display: none;
+    }
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_text {
+
+    width: 75%;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.header_text_line_1 {
+    text-align: center;
+
+}
+
+.header_text_line_2 {
+    text-align: center;
+
+}
+
+.header_text_line_3 {
+    text-align: center;
+}
+
+.header_Text_Link  {
+
+    background: -webkit-linear-gradient(180deg, var(--clr-gradient1), var(--clr-gradient2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+
+    border-color: rgba(0,0,0,0.0);
+    position: relative;
+
+    height: 33px;
+    width: 122px;
+    margin: -1px;
+    padding-top: 6px;
+
+
+    
+}
+
+.header_Text_Link::after {
+                    
+    content: "";
+    position: absolute;
+
+    background: linear-gradient(to left, var(--clr-gradient1), var(--clr-gradient2));
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+
+    inset: 0;
+    padding: 1px; /* control the border thickness */
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+
+    border-radius: 10px;
+}
+
+
+.header3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social_icon_box_container {
+    margin-right: 0;
+    margin-bottom: 12vw;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
