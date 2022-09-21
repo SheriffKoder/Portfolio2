@@ -50,44 +50,44 @@
     .header_Navigation_Link {
         display: none;
     }
-/*/////////////////////////////////////////////////////////////////////////////*/
+    /*////////////////////////////////////////////////////////////////////////////*/
 
-.header2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .header2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.header_text {
+    .header_text {
 
-    width: 75%;
-    margin-left: 0;
-    padding-top: 0;
-    padding-right: 0;
+        width: 75%;
+        margin-left: 0;
+        padding-top: 0;
+        padding-right: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-}
+    }
 
-.header_text_line_1 {
-    text-align: center;
+    .header_text_line_1 {
+        text-align: center;
 
-}
+    }
 
-.header_text_line_2 {
-    text-align: center;
+    .header_text_line_2 {
+        text-align: center;
 
-}
+    }
 
-.header_text_line_3 {
-    text-align: center;
-}
+    .header_text_line_3 {
+        text-align: center;
+    }
 
-.header_Text_Link  {
+    .header_Text_Link  {
 
     background: -webkit-linear-gradient(180deg, var(--clr-gradient1), var(--clr-gradient2));
     -webkit-background-clip: text;
@@ -104,37 +104,94 @@
 
 
     
+    }
+
+    .header_Text_Link::after {
+                        
+        content: "";
+        position: absolute;
+
+        background: linear-gradient(to left, var(--clr-gradient1), var(--clr-gradient2));
+        -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+
+        inset: 0;
+        padding: 1px; /* control the border thickness */
+        -webkit-mask-composite: xor;
+                mask-composite: exclude;
+
+        border-radius: 10px;
+    }
+
+
+    /*/////////////////////////////////////////////////////////////////////////////*/
+
+    .header3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+
+        
+            .social_icon_box_container { /* added ::after to avoid location change - not needed */
+
+ 
+                               
+                height: 150px;
+                width: 30px;
+
+
+                background: var(--clr--social-background);
+
+                border-radius: 20px;
+
+
+                /*/////////////////////////////*/
+                position: fixed;
+                bottom: 14.7%;
+                right: 17px;  
+                margin: 0;
+                z-index: -1;
+                
+                
+
+                
+
+            }
+
+            .social_icon_box_container:hover {
+                background: var(--clr-themeColor-opacity);
+                transition: background 1s ease-in-out;
+            }
+
+
+.social_icon_box {
 }
 
-.header_Text_Link::after {
+
+
+.social_icon_box.transparent_1 {
+    position: fixed;
+    bottom: 15.5%;
+    right: 5px;  
                     
-    content: "";
-    position: absolute;
-
-    background: linear-gradient(to left, var(--clr-gradient1), var(--clr-gradient2));
-    -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
-
-    inset: 0;
-    padding: 1px; /* control the border thickness */
-    -webkit-mask-composite: xor;
-            mask-composite: exclude;
-
-    border-radius: 10px;
 }
 
-
-.header3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.social_icon_box.transparent_2 {
+    position: fixed;
+    bottom: 25.5%;
+    right: 5px;  
 }
 
-.social_icon_box_container {
-    margin-right: 0;
-    margin-bottom: 12vw;
+.social_icon_box.transparent_3 {
+    position: fixed;
+    bottom: 35.5%;
+    right: 5px;  
 }
 
 
@@ -142,14 +199,7 @@
 
 
 
-
 }
-
-
-
-
-
-
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -406,13 +406,10 @@ body {
         }
 
             .social_icon_box_container {
-                position: relative;
             }
         
-            .social_icon_box_container::after { /* added ::after to avoid location change */
+            .social_icon_box_container { /* added ::after to avoid location change */
 
-                position: absolute;
-                content: ' ';
                 height: 30px;
                 width: 150px;
 
@@ -437,7 +434,7 @@ body {
 
             }
 
-            .social_icon_box_container:hover::after {
+            .social_icon_box_container:hover {
                 background: var(--clr-themeColor-opacity);
                 transition: background 1s ease-in-out;
 
@@ -471,6 +468,7 @@ body {
                     0 -0.025em var(--clr-socialborder),
                     0 0.025em  var(--clr-socialborder);
 
+                    z-index: 1; /* level to hover on */
 
 
                 }
@@ -480,7 +478,8 @@ body {
                 .social_icon_box.transparent_1 {
                     position: fixed;
                     bottom: 15.5%;
-                    right: 45px;                  
+                    right: 45px;      
+            
                 }
 
                 .social_icon_box.transparent_2 {
