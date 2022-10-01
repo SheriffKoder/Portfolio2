@@ -25,7 +25,7 @@
     --clr-gradient3: #ff2cdf;
     --clr-gradient2: #00ff5b;
 
-    --clr-socialborder:  rgb(152, 152, 152);
+    --clr-socialborder:  rgb(89, 89, 89); /*152*/
     /*
     --clr-gradient1: hsl(230, 98%, 49%);
     --clr-gradient2: hsl(310, 100%, 50%);
@@ -71,18 +71,18 @@ body {
 
 /*////////////////////////////////////////////////////////////////////*/
 /* Mobile screen */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 470px) {
 
     html {
-        font-size: 4vmin ;
+        font-size: 3vmin ;
     }
 
 
 
     .social_icon_box_container {
 
-        height: 2.2rem;  /* factor of 5 */
-    /*    width: calc(2.2rem * 5); */
+        height: min(2.93rem,34.14px);  /* factor of 5 */
+    /*    width: calc(2.2rem * 5); */  /* no width, responsive to item count */
 
         border-radius: 20px;
 
@@ -104,7 +104,7 @@ body {
         justify-content: space-around;
         align-items: center;
 
-        padding: 0 7.5px;
+        padding: 0.2rem max(0.4rem,6px);
 
     }
 
@@ -116,24 +116,25 @@ body {
 
 
         .social_icon_box {
-            height: 1.7rem;
-            width: 1.8rem;
+            height: min(2.26rem, 27.39px);
+            width: min(2.4rem, 29.02px);
 
-            border-radius: 15px;
+            border-radius: 50%;
 
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
+            font-size: min(1.33em, 16.2px);
+            margin: 0 0.5em;
+            font-weight: 700;
+            padding-top: 0.1em;
 
-            margin: 0 7.5px;
-            font-weight: 500;
-
-
-            text-shadow: 
+            text-shadow: /* text border */
             -0.05em 0 var(--clr-socialborder),
             0.05em 0  var(--clr-socialborder),
             0 -0.05em var(--clr-socialborder),
             0 0.05em  var(--clr-socialborder);
 
+            /* align text inside */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -145,25 +146,101 @@ body {
 
         }
 
+        .social_icon_box:hover {
+            background: rgb(127, 127, 127);;
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+            transition: background var(--timing1) ease-in-out;
 
+        }
 
-
-
-
-  }
-
-
+    
+}
 
 
 
     /*////////////////////////////////////////////////////////////////////*/
     /* Tablet Styles */
-   @media only screen and (min-width: 401px) and (max-width: 1049px) {
+   @media only screen and (min-width: 471px) and (max-width: 1049px) {
 
-    html {
-        font-size: 3vmin;
-    }
+        html {
+            font-size: 3vmin ;
+        }
 
+
+
+        .social_icon_box_container {
+
+            width: min(2.5rem,37.45px);  /* factor of 5 */
+        /*    width: calc(2.2rem * 5); */  /* no width, responsive to item count */
+
+            border-radius: 20px;
+
+
+            /*/////////////////////////////*/
+
+            position: fixed;
+            right: 20px;
+            bottom: 50%;
+            transform: translate(0, 50%);
+
+            background: rgb(22, 22, 22);
+            mix-blend-mode: screen;
+
+            /*/////////////////////////////*/
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            padding: max(0.4em,7px) 0.2em;
+
+        }
+
+        .social_icon_box_container:hover {
+            background: rgb(40, 40, 40);
+            transition: background 1s ease-in-out;
+
+        }
+
+
+            .social_icon_box {
+                height: min(1.7rem, 27.39px);
+                width: min(1.8rem, 29.02px);
+
+                border-radius: 50%;
+
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: min(1em, 16.2px);
+                margin: min(7.5px,1em) 0;
+                font-weight: 700;
+
+
+                text-shadow: /* text border */
+                -0.05em 0 var(--clr-socialborder),
+                0.05em 0  var(--clr-socialborder),
+                0 -0.05em var(--clr-socialborder),
+                0 0.05em  var(--clr-socialborder);
+
+                /* align text inside */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: rgb(89, 89, 89);
+                color: black;
+
+
+
+            }
+
+            .social_icon_box:hover {
+                background: rgb(127, 127, 127);;
+                text-shadow: 0px 0px 10px rgb(0, 0, 0);
+                transition: background var(--timing1) ease-in-out;
+
+            }
 
 
     }
