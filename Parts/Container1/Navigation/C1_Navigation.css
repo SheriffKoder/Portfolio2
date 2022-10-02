@@ -327,7 +327,7 @@ body {
 
 
 /*////////////////////////////////////////////////////////////////////*/
-/* Desktop Styles media query */
+/* Desktop Styles media query with high resolution support */
   @media only screen and (min-width: 1050px) {
     html {
         font-size: 3vmin;
