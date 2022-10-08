@@ -179,8 +179,8 @@ body {
             /*/////////////////////////////*/
 
             position: fixed;
-            right: 20px;
-            bottom: 50%;
+            right: 6.5vmin;
+            bottom: 20%;
             transform: translate(0, 50%);
 
             background: rgb(22, 22, 22);
@@ -265,7 +265,7 @@ body {
         height: min(1.7rem,39px);  /* factor of 5 */
     /*    width: calc(2.2rem * 5); */  /* no width, responsive to item count */
 
-        border-top-left-radius: 22px;
+        border-top-left-radius: 1em;
         
 
         /*/////////////////////////////*/
@@ -285,7 +285,7 @@ body {
         align-items: center;
 
         padding-left: 0rem;
-        padding-top: 1.2rem;
+        padding-top: 1rem;
         padding-bottom: 0.9rem;
         padding-right: 0px;
 
@@ -301,17 +301,17 @@ body {
 
 
         .social_icon_box {
-            height: min(2.26rem, 27.39px);
-            width: min(2.4rem, 29.02px);
+            height: min(1.5rem, 33.39px);
+            width: min(1.6rem, 35.02px);
 
             border-radius: 50%;
 
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: min(1.33em, 16.2px);
+            font-size: min(1em, 19px);
             font-weight: 700;
             padding-top: 0.1em;
-            margin: 0 0.6rem;
+            margin: 0 0.5rem;
 
             text-shadow: /* text border */
             -0.05em 0 var(--clr-socialborder),

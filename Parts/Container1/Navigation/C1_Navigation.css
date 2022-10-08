@@ -118,7 +118,7 @@
                 }
 
                     .header_icon img {
-                        height: 3.5rem;
+                        height: min(3rem, 41px);
                         margin-right: 0.75rem;
 
                     }
@@ -240,7 +240,8 @@
                 }
 
                     .header_icon img {
-                        height: min(3.5rem, 40.64px); /**//* smallest of two, i.e not exceed 40.64px */
+                        height: min(3rem, 41px);
+                        /**//* smallest of two, i.e not exceed 40.64px */
                         margin-right: 0.75rem;
 
                     }

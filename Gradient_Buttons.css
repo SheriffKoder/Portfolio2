@@ -1,8 +1,8 @@
 
-
+  
 /*/////////////////////////////////////////////////////////////////////////////*/
 
-            /* Add Gradient Text*/
+            /* Add Gradient Text Text*/
             .header_Text_Link.Gradient_Text {
 
                 background: -webkit-linear-gradient(180deg, var(--clr-gradient1), var(--clr-gradient2));
