@@ -408,6 +408,7 @@ body {
         background: purple;
 
         height: 95vh;
+        min-height: 700px;
 
         display: flex;
         flex-direction: row;
@@ -442,8 +443,10 @@ body {
 
             }
             
-            .content_space2 {
+            .content_space1 {
                 flex: 1;
+                min-height: min(17vh, 92px);
+                
 
             }
 
@@ -469,7 +472,7 @@ body {
 
                         .text_space .header_text_line_1 {
                             color: var(--clr-lightgrey-text);
-                            font-size: min(2.25rem,25.38px);
+                            font-size: min(2.25vmax,25.38px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 100;
@@ -484,7 +487,7 @@ body {
                         .text_space .header_text_line_2 {
                             color: var(--clr-themeColor);
 
-                            font-size: min(3.55rem,40.044px);
+                            font-size: min(3.55vmax,40.044px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 500;
@@ -525,7 +528,7 @@ body {
 
                     /*set if using light lines button*/
                                 
-                    font-size: min(1.1rem,12.4px);           
+                    font-size: max(12.36px,1.5vmin);           
                     font-weight: 400; 
                     
                     /* light lines button */
@@ -533,11 +536,13 @@ body {
                     border: 1.2px solid var(--clr-lightgrey-border-needed);
         
 
-                    height: min(2.7rem,30.45px);
-                    width: min(10.7rem,120.69px);
+                    height: min(1.5rem, 32px); /**/
+                    width: min(6rem, 130px); /**/
+                    min-height: 31.3px;
+                    min-width: 133.58px;
                     text-align: center;
 
-                    border-radius: min(0.9rem, 10px);
+                    border-radius: 8px;
 
                     text-transform: uppercase;
                     letter-spacing: 0.1em;
