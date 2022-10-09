@@ -1,0 +1,300 @@
+
+  
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+            /* Add Gradient Text Text*/
+            .header_Text_Link.Gradient_Text {
+
+                background: linear-gradient(180deg, var(--clr-gradient1), var(--clr-gradient2));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    
+                }
+
+                /*normal hover effect*/
+                .header1_part3_links.Gradient_Text_hover1:hover {
+
+                    background: linear-gradient(to right, var(--clr-gradient2), var(--clr-gradient1));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: none;
+        
+                    }
+
+
+                /*hover effect with animation*/
+                .Gradient_Text_hover2 {
+                    background: linear-gradient(to right, #FFF 20%, #FFF 50%, var(--clr-gradient2) 75%, var(--clr-gradient1) 100%);
+                    background-size: 200% auto;
+                    
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: none;
+
+                    z-index: 2;
+
+
+                    
+                    
+                }
+                    .Gradient_Text_hover2:hover {
+
+                        animation-name: shine;
+                        animation-duration: 0.5s;
+                        animation-iteration-count: 1;
+                        animation-timing-function: ease-in-out;
+                        animation-fill-mode: forwards;
+
+    
+
+                }
+
+
+                @keyframes shine {
+                  to {
+                    background-position: 100% center;
+                    background-size: 400%;
+                    opacity: 0.8;
+
+                  }
+                }
+    
+    /*/////////////////////////////////////////////////////////////////////////////*/
+    
+                /* Add Gradient Border */
+                .Gradient_Border {
+    
+                    /* Gradient Border without Radius */
+    /*              border: 1px solid;
+                    border-image-slice: 1;                  
+                    border-image-source: linear-gradient(to left, var(--clr-gradient1), var(--clr-gradient2));
+                    */
+    
+                    border-color: rgba(0,0,0,0.0);
+                    position: relative;
+
+                    transition: mask 1000ms linear;
+                    mix-blend-mode: screen; /*lightens the color*/
+
+                }
+
+    
+                /* Add Gradient Border with Radius */
+                .Gradient_Border:after {
+                    
+                    content: "";
+                    position: absolute;
+    
+                    background: linear-gradient(to left, white, white);
+                    -webkit-mask: 
+                      linear-gradient(#fff 0 0) content-box, 
+                      linear-gradient(#fff 0 0);
+    
+                    inset: -1.3px;
+                    padding: 1px; /* control the border thickness */
+                    -webkit-mask-composite: xor;
+                            mask-composite: exclude;
+    
+                    border-radius: 9.5px;
+    
+/*                    background: linear-gradient(to left, var(--clr-gradient2), var(--clr-gradient1));
+*/
+    
+    
+                }
+
+                .Gradient_Border:hover::after {
+                    animation-name: gradient_border_anim;
+                    animation-duration: 1s;
+                    animation-iteration-count: 1;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: forwards;
+
+
+                }
+
+                @keyframes gradient_border_anim {
+                    0%   {linear-gradient(to left, white, white);}
+                    15% {background: linear-gradient(to left, var(--clr-gradient2),white, white, white ,white, white );}
+                    30% {background: linear-gradient(to left, var(--clr-gradient2),var(--clr-gradient2), white, white ,white, white );}
+                    45% {background: linear-gradient(to left, var(--clr-gradient2),var(--clr-gradient2), var(--clr-gradient2), white ,white, white );}
+                    60% {background: linear-gradient(to left, var(--clr-gradient1),var(--clr-gradient2), var(--clr-gradient2), var(--clr-gradient2) ,white, white );}
+                    75% {background: linear-gradient(to left, var(--clr-gradient1),var(--clr-gradient1), var(--clr-gradient1), var(--clr-gradient2) ,var(--clr-gradient2), white );}
+                    90% {background: linear-gradient(to left, var(--clr-gradient1),var(--clr-gradient1), var(--clr-gradient1), var(--clr-gradient2) ,var(--clr-gradient2), var(--clr-gradient2) );}
+                    100% {background: linear-gradient(to left, var(--clr-gradient1),var(--clr-gradient2));}
+
+                  }
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+        .Gradient_Link_Background3 {
+            color: white;
+        }
+
+        .Gradient_Link_Background3:hover {
+            color: black;
+            animation-name: gradient_bg_anim;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }      
+
+        @keyframes gradient_bg_anim {
+            0%   {linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0));}
+            15% {background: linear-gradient(to left, var(--clr-gradient2),rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0) ,rgba(0,0,0,0), rgba(0,0,0,0) );}
+            30% {background: linear-gradient(to left, var(--clr-gradient2),var(--clr-gradient2), rgba(0,0,0,0), rgba(0,0,0,0) ,rgba(0,0,0,0), rgba(0,0,0,0) );}
+            45% {background: linear-gradient(to left, var(--clr-gradient2),var(--clr-gradient2), var(--clr-gradient2), rgba(0,0,0,0) ,rgba(0,0,0,0)rgba,(0,0,0,0), rgba(0,0,0,0) );}
+            60% {background: linear-gradient(to left, var(--clr-gradient1),var(--clr-gradient2), var(--clr-gradient2), var(--clr-gradient2) ,rgba(0,0,0,0), rgba(0,0,0,0) );}
+            75% {background: linear-gradient(to left, var(--clr-gradient1),var(--clr-gradient1), var(--clr-gradient1), var(--clr-gradient2) ,var(--clr-gradient2), rgba(0,0,0,0) );}
+            90% {background: linear-gradient(to left, var(--clr-gradient1),var(--clr-gradient1), var(--clr-gradient1), var(--clr-gradient2) ,var(--clr-gradient2), var(--clr-gradient2) );}
+            100% {background: linear-gradient(to left, var(--clr-gradient1),var(--clr-gradient2));}
+
+          }
+      
+        .Gradient_Link_Background2 {
+
+
+            transition: color 2s ease, font-weight 0.1s ease-out;
+
+
+            position: relative;         
+
+
+        }
+
+
+        .Gradient_Link_Background2:hover {
+            color: black !important;        /*activate the transparent text*/
+            font-weight: 900;
+            text-shadow: none;
+
+        }
+
+
+                /*-----------------------------------------------------------------------------*/
+                .Gradient_Link_Background2::before { 
+
+                    /*before or after the content of the element */
+                    /* dont work on images because they are content themselves */
+                    content: ' '; /* Add Text for white text */
+
+                    background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));                
+                    position: absolute;
+
+                    top:0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: inherit;
+                    width: inherit;
+
+
+                    border-radius: inherit;
+                    z-index: -2; /* make 0 for white text */
+                    opacity:0;                    
+
+                    
+                    transition: opacity 1000ms linear;
+
+                }
+
+
+
+                .Gradient_Link_Background2::after { 
+
+                    /*before or after the content of the element */
+                    /* dont work on images because they are content themselves */
+                    content: ' '; /* Add Text for white text */
+
+                    background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2), var(--clr-gradient2));                
+                    position: absolute;
+
+                    top:0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: inherit;
+                    width: inherit;
+
+
+                    border-radius: inherit;
+                    z-index: -1; /* make 0 for white text */
+                    opacity:0;                    
+
+                    
+                    transition: opacity 2000ms linear;
+
+                }
+
+                .Gradient_Link_Background2:hover::before {
+                    opacity: 1;
+                }
+
+                .Gradient_Link_Background2:hover::after {
+                    opacity: 1;
+                }
+
+
+    /*/////////////////////////////////////////////////////////////////////////////*/
+    /*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                .Gradient_Link_Background {
+
+    
+                    font-size: 20px;
+                    font-weight: 900;
+                    padding-top: 0px;
+
+
+                    /* style : to use gradient color to work with the ::before - transparent text */
+                    background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
+                    border: none;
+    
+                    /* Gives the transparent text property, Remove for white text */
+                    color: black;
+                    transform: translate(0%, 0%);
+                    mix-blend-mode: screen;
+    
+                    position: relative;         
+    
+    
+                }
+    
+                        /*-----------------------------------------------------------------------------*/
+                        .Gradient_Link_Background::before { 
+    
+                            /*before or after the content of the element */
+                            /* dont work on images because they are content themselves */
+                            content: ' '; /* Add Text for white text */
+    
+                            background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));                position: absolute;
+    
+                            top:0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                        
+                            height: inherit;
+                            width: inherit;
+    
+                            opacity:0;                    
+    
+                            border-radius: 10px;
+                            z-index: -1; /* make 0 for white text */
+                            mix-blend-mode: multiply; /* remove for white text */
+    
+                            
+                            transition: opacity 1000ms linear;
+    
+                        }
+    
+                        .Gradient_Link_Background:hover::before {
+                            opacity: 1;
+                        }   
+    
+    
+    
+

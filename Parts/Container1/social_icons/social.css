@@ -58,7 +58,6 @@
 
 body {
     height: 200vh;
-    background-color: purple;
 /*    background: url('https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80') 50%;
 */
 
@@ -262,7 +261,7 @@ body {
 
     .social_icon_box_container {
 
-        height: min(1.7rem,39px);  /* factor of 5 */
+        height: min(1.7rem,30px);  /* factor of 5 */
     /*    width: calc(2.2rem * 5); */  /* no width, responsive to item count */
 
         border-top-left-radius: 20px;
@@ -287,8 +286,8 @@ body {
         align-items: center;
 
         padding-left: 0rem;
-        padding-top: 20px;
-        padding-bottom: 18px;
+        padding-top: 15px;
+        padding-bottom: 13px;
         padding-right: 0px;
 
 
@@ -303,8 +302,8 @@ body {
 
 
         .social_icon_box {
-            height: 28.8px;
-            width: 30.72px;
+            height: 24px;
+            width: 25px;
 /*
             height: min(1.5rem, 33.39px);
             width: min(1.6rem, 35.02px);
@@ -314,7 +313,7 @@ body {
 
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 19px;
+            font-size: 16px;
             font-weight: 700;
             padding-top: 2px;
             margin: 0 10px;
@@ -365,10 +364,12 @@ html {
 
 .social_icon_box_container {
 
-    height: min(1.7rem, 49.8px);  /* factor of 5 */
+    height: min(1.7rem,30px);  /* factor of 5 */
 /*    width: calc(2.2rem * 5); */  /* no width, responsive to item count */
 
-    border-top-left-radius: 22px;
+    border-top-left-radius: 20px;
+
+    min-height: 36.58px ;
     
 
     /*/////////////////////////////*/
@@ -388,8 +389,8 @@ html {
     align-items: center;
 
     padding-left: 0rem;
-    padding-top: min(0.8rem, 28.46px);
-    padding-bottom: min(0.6rem, 21.34px);
+    padding-top: 15px;
+    padding-bottom: 13px;
     padding-right: 0px;
 
 
@@ -404,17 +405,21 @@ html {
 
 
     .social_icon_box {
-        height: min(1rem,35.58px);
-        width: min(1rem,35.58px);
-        font-size: 0.5em;
+        height: 24px;
+        width: 25px;
+/*
+        height: min(1.5rem, 33.39px);
+        width: min(1.6rem, 35.02px);
+*/
 
         border-radius: 50%;
 
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
         font-weight: 700;
-        padding-top: 0.1em;
-        margin: 0 min(0.4rem,14.23px);
+        padding-top: 2px;
+        margin: 0 10px;
 
         text-shadow: /* text border */
         -0.05em 0 var(--clr-socialborder),
@@ -441,5 +446,42 @@ html {
 
     }
 
+
+}
+
+
+
+.social_icon_box_container2 {
+
+    height: min(1.7rem,30px);  /* factor of 5 */
+/*    width: calc(2.2rem * 5); */  /* no width, responsive to item count */
+
+    border-top-left-radius: 20px;
+
+    min-height: 36.58px ;
     
-    }
+
+    /*/////////////////////////////*/
+
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+
+    background: rgb(22, 22, 22);
+    mix-blend-mode: screen;
+
+    /*/////////////////////////////*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: 0rem;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-right: 0px;
+
+
+
+}

@@ -56,7 +56,7 @@
 
 body {
     height: 200vh;
-    background-color: rgb(65, 41, 94);
+    background-color: black;
     margin: 0;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
@@ -78,16 +78,20 @@ body {
     }
 
     .container1 {
-        background: purple;
-
+        /* background gradient overlay */    
+        background: 
+        linear-gradient(to left,  rgba(0, 0, 0, 0.8) ,  rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4)), 
+        url("./car_Chevrolet_Camaro_Z28_monochrome-26097.jpg");
         height: 95vh;
 
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: row;
     }
 
     .container1_space1, .container1_space2 {
-        background: rgba(206, 0, 0, 0.238);
+        background: rgba(206, 0, 0, 0);
         height: 100%;
         width: 10%;
 
@@ -96,7 +100,7 @@ body {
         /*///////////////////////////////*/
         /*///////////////////////////////*/
         .container1_content {
-            background: rgba(0, 0, 0, 0.271);
+            background: rgba(0, 0, 0, 0);
             height: 100%;
 
             flex:1;
@@ -109,7 +113,7 @@ body {
 
 
             .content_space1, .content_space2 {
-                background: rgba(166, 0, 255, 0.238);
+                background: rgba(166, 0, 255, 0);
                 width: 100%;
                 flex: 1;
 
@@ -243,16 +247,22 @@ body {
     }
 
     .container1 {
-        background: purple;
 
+        /* background gradient overlay */    
+        background: 
+        linear-gradient(to right,  rgba(0, 0, 0, 0.8) ,  rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ,rgba(0, 0, 0, 0.2)), 
+        url("./car_Chevrolet_Camaro_Z28_monochrome-26097.jpg");
         height: 95vh;
+
+        background-repeat: no-repeat;
+        background-size: cover;
 
         display: flex;
         flex-direction: row;
     }
 
     .container1_space1, .container1_space2 {
-        background: rgba(55, 255, 0, 0.238);
+        background: rgba(55, 255, 0, 0);
         height: 100%;
         width: 10%;
 
@@ -261,7 +271,7 @@ body {
         /*///////////////////////////////*/
         /*///////////////////////////////*/
         .container1_content {
-            background: rgba(0, 0, 0, 0.271);
+            background: rgba(0, 0, 0, 0);
             height: 100%;
 
             flex:1;
@@ -274,7 +284,7 @@ body {
 
 
             .content_space1, .content_space2 {
-                background: rgba(166, 0, 255, 0.238);
+                background: rgba(166, 0, 255, 0);
                 width: 100%;
                 flex: 1;
 
@@ -405,9 +415,16 @@ body {
     }
 
     .container1 {
-        background: purple;
 
-        height: 95vh;
+        /* background gradient overlay */    
+        background: 
+        linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)), 
+        url("./car_Chevrolet_Camaro_Z28_monochrome-26097.jpg");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 99vh;
         min-height: 700px;
 
         display: flex;
@@ -415,7 +432,7 @@ body {
     }
 
     .container1_space1, .container1_space2 {
-        background: rgba(255, 0, 0, 0.238);
+        background: rgba(255, 0, 0, 0);
         height: 100%;
         width: 10%;
 
@@ -424,7 +441,7 @@ body {
         /*///////////////////////////////*/
         /*///////////////////////////////*/
         .container1_content {
-            background: rgba(0, 0, 0, 0.271);
+            background: rgba(0, 0, 0, 0);
             height: 100%;
 
             flex:1;
@@ -437,7 +454,7 @@ body {
 
 
             .content_space1, .content_space2 {
-                background: rgba(166, 0, 255, 0.238);
+                background: rgba(166, 0, 255, 0);
                 width: 100%;
                 flex: 1;
 
@@ -472,7 +489,7 @@ body {
 
                         .text_space .header_text_line_1 {
                             color: var(--clr-lightgrey-text);
-                            font-size: min(2.25vmax,25.38px);
+                            font-size: min(2.25vmax,25px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 100;
@@ -487,7 +504,7 @@ body {
                         .text_space .header_text_line_2 {
                             color: var(--clr-themeColor);
 
-                            font-size: min(3.55vmax,40.044px);
+                            font-size: min(3.55vmax,40px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 500;
@@ -500,7 +517,7 @@ body {
 
                         .text_space .header_text_line_3 {
                             color: var(--clr-lightgrey-text);
-                            font-size: calc(5px + (7vw/8)); /**/
+                            font-size: 13px; /* calc(5px + (7vw/12));*/
                             font-weight: 200;
                             word-spacing: 0.05em;
 
@@ -528,31 +545,46 @@ body {
 
                     /*set if using light lines button*/
                                 
-                    font-size: max(12.36px,1.5vmin);           
-                    font-weight: 400; 
+                    /*font-size: max(12.36px,1.5vmin);          */ 
                     
                     /* light lines button */
-                    color: var(--clr-lightgrey-text);
-                    border: 1.2px solid var(--clr-lightgrey-border-needed);
+
         
 
-                    height: min(1.5rem, 32px); /**/
-                    width: min(6rem, 130px); /**/
+            /*      height: min(1.5rem, 32px);
+                    width: min(6rem, 130px);
                     min-height: 31.3px;
-                    min-width: 133.58px;
-                    text-align: center;
-
-                    border-radius: 8px;
-
-                    text-transform: uppercase;
-                    letter-spacing: 0.1em;
+                    min-width: 133.58px; */
 
 
-                    color: white;
+
+
+
+
 
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+
+
+
+
+
+                    font-size: 12px;
+                    font-weight: 400;
+
+                    color: var(--clr-lightgrey-text);
+                    border: 1.2px solid var(--clr-lightgrey-border-needed);
+                    border-radius: 10px;
+
+                    height: 30px; /**/
+                    width: 120px; /**/
+
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+
 
 
                 }
@@ -577,19 +609,39 @@ body {
     }
 
     .container1 {
-        background: purple;
+
+                
+        /* background gradient overlay */    
+      background: 
+        linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)), 
+        url("./car_Chevrolet_Camaro_Z28_monochrome-26097.jpg");
+
+/*        background:  rgba(0, 0, 0, 0.1) url("./car_Chevrolet_Camaro_Z28_monochrome-26097.jpg");
+        background-blend-mode:overlay;
+*/    
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         height: 95vh;
+        max-height: 1200px;
         width: 100%;
         max-width: 1800px;
         margin: 0 auto;
 
         display: flex;
         flex-direction: row;
+
+        /*background-opacity*/
+        /*box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.5);*/
+        /* optional background-blend-mode: multiply; will multiply colors*/
+        /*background: url no-repeat center center / cover */
+
+
     }
 
     .container1_space1, .container1_space2 {
-        background: rgba(255, 0, 0, 0.238);
+        background: rgba(255, 0, 0, 0);
         height: 100%;
         width: 10%;
 
@@ -598,7 +650,7 @@ body {
         /*///////////////////////////////*/
         /*///////////////////////////////*/
         .container1_content {
-            background: rgba(0, 0, 0, 0.271);
+            background: rgba(0, 0, 0, 0);
             height: 100%;
 
             flex:1;
@@ -611,14 +663,16 @@ body {
 
 
             .content_space1, .content_space2 {
-                background: rgba(166, 0, 255, 0.238);
+                background: rgba(166, 0, 255, 0);
                 width: 100%;
                 flex: 1;
 
             }
             
-            .content_space2 {
+            .content_space1 {
                 flex: 1;
+                min-height: min(17vh, 92px);
+                
 
             }
 
@@ -644,7 +698,7 @@ body {
 
                         .text_space .header_text_line_1 {
                             color: var(--clr-lightgrey-text);
-                            font-size: min(2.25rem,25.38px);
+                            font-size: min(2.25vmax,25px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 100;
@@ -659,7 +713,7 @@ body {
                         .text_space .header_text_line_2 {
                             color: var(--clr-themeColor);
 
-                            font-size: min(3.55rem,40.044px);
+                            font-size: min(3.55vmax,40px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 500;
@@ -672,7 +726,7 @@ body {
 
                         .text_space .header_text_line_3 {
                             color: var(--clr-lightgrey-text);
-                            font-size: calc(5px + (7vw/10)); /**/
+                            font-size: max(0.9vmax,13px); /* calc(5px + (7vw/12));*/
                             font-weight: 200;
                             word-spacing: 0.05em;
 
@@ -700,41 +754,55 @@ body {
 
                     /*set if using light lines button*/
                                 
-                    font-size: calc(5px + (9vw/20)); /**/
-                    font-weight: 400; 
+                    /*font-size: max(12.36px,1.5vmin);          */ 
                     
                     /* light lines button */
-                    color: var(--clr-lightgrey-text);
-                    border: 1.2px solid var(--clr-lightgrey-border-needed);
+
         
 
-                    height: min(2.7rem,32px);
-                    width: min(10.7rem,130px);
-                    text-align: center;
-
-                    border-radius: min(0.9rem, 10px);
-
-                    text-transform: uppercase;
-                    letter-spacing: 0.1em;
+            /*      height: min(1.5rem, 32px);
+                    width: min(6rem, 130px);
+                    min-height: 31.3px;
+                    min-width: 133.58px; */
 
 
-                    color: white;
+
+
+
+
 
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
+
+
+
+
+
+                    font-size: max(0.7vmax, 12px);
+                    font-weight: 400;
+
+                    color: var(--clr-lightgrey-text);
+                    border: 1.2px solid var(--clr-lightgrey-border-needed);
+                    border-radius: 10px;
+
+                    height: max(1.7vmax, 30px); /**/
+                    width: max(7vmax, 120px); /**/
+
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+
+
+
                 }
 
                     .header_Text_Link p {
 
-                        letter-spacing: 0.2em;
-
                     } 
 
-         
-
-
+                    
 
 
 
@@ -752,3 +820,45 @@ body {
     flex-direction: row;
 }
           
+
+/* changes the cursor shape on selected links */
+.cursor_pointer {
+    cursor: pointer;
+
+}
+
+
+            .header_Text_Link:hover {
+
+
+/*                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
+*/                /* remove for white text, remove i used it for some reason but its not necessary */
+
+                /* style : filled color icon */
+/*                
+                color: black;
+                background-color: var(--clr-themeColor);
+                font-weight: 400;
+                border: 0.1em solid var(--clr-themeColor);
+                
+
+                /* style : gradient color on hover */ /*
+                color: white;
+                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));
+                font-weight: 300;
+                border: none;
+*/
+
+                /* style : enlightened icon */
+/*                
+                text-shadow: 0px 0px 10px white;
+                color:white;
+                background-color: var(--clr-themeColor-opacity);
+                border: 0.1em solid var(--clr-themeColor-darker);
+                box-shadow: 0px 0px 1px var(--clr-themeColor-darker), inset 0px 0px 5px var(--clr-themeColor-darker);
+                filter: blur(0.3px);
+*/                
+                /*background-color: var(--clr--contact-background-hover);*/
+
+
+            }
