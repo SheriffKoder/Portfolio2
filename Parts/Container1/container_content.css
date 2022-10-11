@@ -20,8 +20,8 @@
     --timing2: 5s;
 
     --clr-gradient1: #0014ff;
-    --clr-gradient3: #ff2cdf;
-    --clr-gradient2: #00ff5b;
+    --clr-gradient3: #e234c8;
+    --clr-gradient2: #00ffc3;
 
     --clr-socialborder:  rgb(89, 89, 89); /*152*/
     /*
@@ -56,7 +56,7 @@
 
 body {
     height: 3000px;
-    background-color: black;
+    background-color: var(--clr-backgoundColor-black);
     margin: 0;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
