@@ -55,7 +55,7 @@
 }
 
 body {
-    height: 200vh;
+    height: 3000px;
     background-color: black;
     margin: 0;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -425,7 +425,7 @@ body {
         background-size: cover;
 
         height: 99vh;
-        min-height: 700px;
+        min-height: 600px;
 
         display: flex;
         flex-direction: row;
