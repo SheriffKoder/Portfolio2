@@ -2,18 +2,18 @@
 /*/////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////*/
 
-
+/*
 body {
     height: 200vh;
-/*    background: url('https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80') 50%;
-*/
+    background: url('https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80') 50%;
+
 
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
+*/
 
 /*////////////////////////////////////////////////////////////////////*/
 /* Mobile screen */
@@ -74,18 +74,19 @@ body {
             font-weight: 700;
             padding-top: 0.1em;
 
-            text-shadow: /* text border */
-            -0.05em 0 var(--clr-socialborder),
-            0.05em 0  var(--clr-socialborder),
-            0 -0.05em var(--clr-socialborder),
-            0 0.05em  var(--clr-socialborder);
-
+/*
+                text-shadow:
+                -0.05em 0 var(--clr-socialborder),
+                0.05em 0  var(--clr-socialborder),
+                0 -0.05em var(--clr-socialborder),
+                0 0.05em  var(--clr-socialborder);
+*/
             /* align text inside */
             display: flex;
             justify-content: center;
             align-items: center;
 
-            background-color: rgb(89, 89, 89);
+            background-color: rgba(172, 172, 172, 0.65);
             color: black;
 
 
@@ -106,7 +107,7 @@ body {
 
     /*////////////////////////////////////////////////////////////////////*/
     /* Tablet Styles */
-   @media only screen and (min-width: 471px) and (max-width: 800px) {
+   @media only screen and (min-width: 471px) and (max-width: 899px) {
 
         html {
             font-size: 3vmin ;
@@ -162,19 +163,19 @@ body {
                 margin: min(7.5px,1em) 0;
                 font-weight: 700;
 
-
-                text-shadow: /* text border */
+/*
+                text-shadow:
                 -0.05em 0 var(--clr-socialborder),
                 0.05em 0  var(--clr-socialborder),
                 0 -0.05em var(--clr-socialborder),
                 0 0.05em  var(--clr-socialborder);
-
+*/
                 /* align text inside */
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                background-color: rgb(89, 89, 89);
+                background-color: rgba(172, 172, 172, 0.65);
                 color: black;
 
 
@@ -198,7 +199,7 @@ body {
 
 /*////////////////////////////////////////////////////////////////////*/
 /* Desktop Styles media query with high resolution support */
-  @media only screen and (min-width: 801px) and (max-width: 1500px){
+  @media only screen and (min-width: 900px) and (max-width: 1500px){
 
     html {
         font-size: 3vmin ;
@@ -265,18 +266,12 @@ body {
             padding-top: 1.7px;
             margin: 0 8.5px;
 
-            text-shadow: /* text border */
-            -0.05em 0 var(--clr-socialborder),
-            0.05em 0  var(--clr-socialborder),
-            0 -0.05em var(--clr-socialborder),
-            0 0.05em  var(--clr-socialborder);
-
             /* align text inside */
             display: flex;
             justify-content: center;
             align-items: center;
 
-            background-color: rgb(89, 89, 89);
+            background-color: rgba(172, 172, 172);
             color: black;
 
 
@@ -368,18 +363,20 @@ html {
         padding-top: 2px;
         margin: 0 10px;
 
-        text-shadow: /* text border */
-        -0.05em 0 var(--clr-socialborder),
-        0.05em 0  var(--clr-socialborder),
-        0 -0.05em var(--clr-socialborder),
-        0 0.05em  var(--clr-socialborder);
+/*
+                text-shadow:
+                -0.05em 0 var(--clr-socialborder),
+                0.05em 0  var(--clr-socialborder),
+                0 -0.05em var(--clr-socialborder),
+                0 0.05em  var(--clr-socialborder);
+*/
 
         /* align text inside */
         display: flex;
         justify-content: center;
         align-items: center;
 
-        background-color: rgb(89, 89, 89);
+        background-color: rgba(172, 172, 172, 0.65);
         color: black;
 
 

@@ -51,11 +51,13 @@
     --clr-link-color-hover:  rgba(255, 255, 255, 1); /* 0.2 opacity text-color makes effect*/
 
 
+    --container-height: 95vh;
+    --container-count: 4;
 
 }
 
 body {
-    height: 3000px;
+    height: calc( var(--container-height) * var(--container-count) ) !important;
     background-color: var(--clr-backgoundColor-black);
     margin: 0;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -420,6 +422,7 @@ body {
         background: 
         linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)), 
         url("./car_Chevrolet_Camaro_Z28_monochrome-26097.jpg");
+        
 
         background-repeat: no-repeat;
         background-size: cover;

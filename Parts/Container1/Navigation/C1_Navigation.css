@@ -251,7 +251,7 @@ body {
                 .header1_part3_menu {
                     height: min(3rem, 41px);
                     width: min(3rem, 41px);
-                    background: rgba(0, 0, 0, 0.4);
+                    background-color: rgba(172, 172, 172, 0.45);
                     border-radius:  30%;
 /*                    margin-left: 1rem;  */
                     position: relative;
