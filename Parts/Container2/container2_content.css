@@ -1,0 +1,222 @@
+
+
+:root {
+    --clr-backgoundColor-black: hsl(0, 0%, 18%);
+    /*--clr-backgoundColor-black: hsl(0, 81%, 40%); red */
+
+    --clr-backgoundColor-black-hover: hsl(0, 0%, 60%); ;
+
+/*    --clr-lightgrey-borders: hsl(0, 1%, 80%); /*disable*/ 
+    --clr-lightgrey-border-needed: hsl(0, 1%, 80%);
+    --clr-lightgrey-text: hsl(0, 0%, 85%);
+    --clr-lightergrey-text: hsl(0, 0%, 95%);
+
+    --clr--contact-background: hsla(0, 0%, 85%, 0.2);
+    --clr--social-background: hsla(0, 0%, 85%, 0.1);
+
+    --clr--contact-background-hover: hsla(0, 0%, 75%, 0.2);
+
+    --timing1: 0.5s;
+    --timing2: 5s;
+
+    --clr-gradient1: #0014ff;
+    --clr-gradient3: #e234c8;
+    --clr-gradient2: #00ffc3;
+
+    --clr-socialborder:  rgb(89, 89, 89); /*152*/
+    /*
+    --clr-gradient1: hsl(230, 98%, 49%);
+    --clr-gradient2: hsl(310, 100%, 50%);
+    --clr-gradient3: hsl(149, 100%, 49%);
+*/
+    /* green theme */
+    /*--clr-themeColor: rgb(255, 255, 255); */
+ /*   --clr-themeColor: rgba(0, 255, 200, 0.975);
+    --clr-themeColor-darker:  rgba(13, 157, 118, 0.975);
+    --clr-themeColor-opacity:  rgba(0, 255, 190, 0.2);
+*/
+
+    /* blue theme */
+/*    --clr-themeColor: rgba(14, 0, 165, 0.975);
+    --clr-themeColor-darker:  rgba(13, 44, 157, 0.975);
+    --clr-themeColor-opacity:  rgba(0, 8, 255, 0.2);
+*/
+
+    /* white theme */
+  --clr-themeColor: rgba(245, 245, 245, 0.975);
+    --clr-themeColor-darker:  rgba(200, 200, 200, 0.975);
+    --clr-themeColor-opacity:  rgba(233, 233, 233, 0.2);
+
+
+    --clr-link-color-hover:  rgba(255, 255, 255, 1); /* 0.2 opacity text-color makes effect*/
+
+
+    --container-height: 95vh;
+    --container-count: 4;
+
+}
+
+body {
+    height: calc( var(--container-height) * var(--container-count) ) !important;
+    background-color: var(--clr-backgoundColor-black);
+    margin: 0;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+/* Mobile screen */
+@media only screen and (max-width: 470px) {
+
+    html {
+        font-size: 3vmin ;
+    }
+
+    .container2 {
+
+        background-color: rgb(38, 38, 38);
+        width:100vw;
+        min-height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+
+    }
+
+        .card_holder {
+
+            width: 90%;
+            background-color: rgb(31, 31, 31);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 7rem 0;
+            grid-gap: 5rem;
+
+        }
+
+            .card {
+
+                height: 20rem;
+                width: 20rem;
+                background-color: rgb(77, 77, 77);
+            }
+
+
+
+
+
+
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 471px) and (max-width: 800px) {
+
+    html {
+        font-size: 3vmin ;
+    }
+
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+/* Desktop screen */
+
+@media only screen and (min-width: 801px) and (max-width: 1500px){
+
+
+    html {
+        font-size: 3vmin ;
+    }
+
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+/* widescreen */
+
+@media only screen and (min-width: 1501px) {
+
+
+
+    html {
+        font-size: 3vmin ;
+    }
+
+}
+
+.container2_test {
+    
+    background:  purple;
+
+/*
+    linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)),
+    linear-gradient(to top, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
+    rgba(41,41,43,255);
+        add for top continuation with container1 */
+
+    
+
+    height: 95vh;
+    max-width: 1800px;
+    margin:0 auto;
+
+    display: flex;
+    flex-direction: row;
+}
+          
+
+/* changes the cursor shape on selected links */
+.cursor_pointer {
+    cursor: pointer;
+
+}
+
+
+            .header_Text_Link:hover {
+
+
+/*                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient2));
+*/                /* remove for white text, remove i used it for some reason but its not necessary */
+
+                /* style : filled color icon */
+/*                
+                color: black;
+                background-color: var(--clr-themeColor);
+                font-weight: 400;
+                border: 0.1em solid var(--clr-themeColor);
+                
+
+                /* style : gradient color on hover */ /*
+                color: white;
+                background-image: linear-gradient(to right, var(--clr-gradient1) , var(--clr-gradient1), var(--clr-gradient2));
+                font-weight: 300;
+                border: none;
+*/
+
+                /* style : enlightened icon */
+/*                
+                text-shadow: 0px 0px 10px white;
+                color:white;
+                background-color: var(--clr-themeColor-opacity);
+                border: 0.1em solid var(--clr-themeColor-darker);
+                box-shadow: 0px 0px 1px var(--clr-themeColor-darker), inset 0px 0px 5px var(--clr-themeColor-darker);
+                filter: blur(0.3px);
+*/                
+                /*background-color: var(--clr--contact-background-hover);*/
+
+
+            }
