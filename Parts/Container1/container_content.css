@@ -420,14 +420,18 @@ body {
 
         /* background gradient overlay */    
         background: 
-        linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)), 
+        linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)),
         url("./car_Chevrolet_Camaro_Z28_monochrome-26097.jpg");
-        
+
+        /*        linear-gradient(to bottom, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
+        add for bottom continuation */
+
 
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: top;
 
-        height: 99vh;
+        height: 130vh;
         min-height: 600px;
 
         display: flex;
@@ -813,7 +817,16 @@ body {
 }
 
 .container2_test {
-    background: rgb(79, 0, 128);
+    
+    background:  purple;
+
+/*
+    linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)),
+    linear-gradient(to top, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
+    rgba(41,41,43,255);
+        add for top continuation with container1 */
+
+    
 
     height: 95vh;
     max-width: 1800px;
