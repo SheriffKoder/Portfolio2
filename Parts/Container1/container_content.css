@@ -421,6 +421,8 @@ body {
         /* background gradient overlay */    
         background: 
         linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)),
+        linear-gradient(to bottom, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
+        
         url("./car_Chevrolet_Camaro_Z28_monochrome-26097.jpg");
 
         /*        linear-gradient(to bottom, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
@@ -429,9 +431,9 @@ body {
 
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top;
+        background-position: center;
 
-        height: 130vh;
+        height: 120vh;
         min-height: 600px;
 
         display: flex;
@@ -579,7 +581,7 @@ body {
 
 
                     font-size: 12px;
-                    font-weight: 400;
+                    font-weight: 700;
 
                     color: var(--clr-lightgrey-text);
                     border: 1.2px solid var(--clr-lightgrey-border-needed);
@@ -817,25 +819,39 @@ body {
 }
 
 .container2_test {
-    
-    background:  purple;
 
-/*
+/*    border: 1px dotted rgba(41,41,43,1);*/
+
+    background:
+
+
     linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)),
     linear-gradient(to top, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
     rgba(41,41,43,255);
-        add for top continuation with container1 */
+        /*add for top continuation with container1 */
 
     
 
-    height: 95vh;
+    height: 120vh;
     max-width: 1800px;
     margin:0 auto;
 
     display: flex;
     flex-direction: row;
+    padding-top: 70px;
 }
           
+
+.hr1 {
+    border-top: 0.01rem solid;
+    border-image-slice: 1;                  
+    border-image-source: linear-gradient(to left, var(--clr-gradient1), var(--clr-gradient2));
+
+    height: 0px;
+    width: 60%;
+    margin: 0 auto;
+    opacity: 0.5;
+}
 
 /* changes the cursor shape on selected links */
 .cursor_pointer {
