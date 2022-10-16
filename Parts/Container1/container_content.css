@@ -23,6 +23,10 @@
     --clr-gradient3: #e234c8;
     --clr-gradient2: #00ffc3;
 
+    --clr-gradient1-o: hsla(235, 100%, 50%, 0.275);
+    --clr-gradient3-o: hsla(309, 75%, 55%, 0.255);
+    --clr-gradient2-o: hsla(166, 100%, 50%, 0.278); 
+
     --clr-socialborder:  rgb(89, 89, 89); /*152*/
     /*
     --clr-gradient1: hsl(230, 98%, 49%);
@@ -840,7 +844,7 @@ body {
     background:
     linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)),
     linear-gradient(to top, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
-    rgba(41,41,43,255);
+    rgba(41,41,43,255) !important;
         /*add for top continuation with container1 */
 
 
