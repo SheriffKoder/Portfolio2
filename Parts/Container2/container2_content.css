@@ -86,34 +86,47 @@ body {
         min-height: 100vh;
 
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
-        padding: 1rem;
+
+        gap: 6rem;
+
+        padding-top: min(17vh, 100px);
 
 
     }
 
-        .card_holder {
 
-            width: 90%;
-            background-color: rgb(31, 31, 31);
+    .card_outer {
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        height: 22rem;
+        max-height: 230px;
 
-            padding: 7rem 0;
-            grid-gap: 5rem;
+        width: 22rem;
+        max-width: 230px;
+        background: rgb(75, 75, 75);
+        border-radius: 15px;
 
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-            .card {
+    }
 
-                height: 20rem;
-                width: 20rem;
-                background-color: rgb(77, 77, 77);
-            }
+    .card_inner {
 
+        height: 90%;
+
+        width: 90%;
+        background: grey;
+        border-radius: 12px;
+
+
+
+    }
+
+   
 
 
 
@@ -160,7 +173,6 @@ body {
 
 .container2_test {
     
-    background:  purple;
 
 /*
     linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)),
