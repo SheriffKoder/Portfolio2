@@ -835,19 +835,21 @@ body {
 
 }
 
-.container2_test {
 
-/*    border: 1px dotted rgba(41,41,43,1);*/
-
+.cont_bg_color {
     background:
-
-
     linear-gradient(to right,  rgba(0, 0, 0, 0.6) ,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ,rgba(0, 0, 0, 0)),
     linear-gradient(to top, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
     rgba(41,41,43,255);
         /*add for top continuation with container1 */
 
-    
+
+}
+
+.container2_test {
+
+/*    border: 1px dotted rgba(41,41,43,1);*/
+
 
     height: 120vh;
     max-width: 1800px;
