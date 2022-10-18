@@ -52,6 +52,8 @@ body {
 
         padding: 0.2rem max(0.4rem,6px);
 
+        z-index: 5;
+
     }
 
     .social_icon_box_container:hover {
@@ -141,6 +143,9 @@ body {
             align-items: center;
 
             padding: max(0.4em,7px) 0.2em;
+
+            z-index: 5;
+
 
         }
 
@@ -238,6 +243,7 @@ body {
         padding-bottom: 11.05px;
         padding-right: -1px;
 
+        z-index: 5;
 
 
     }
@@ -335,6 +341,7 @@ html {
     padding-bottom: 13px;
     padding-right: 0px;
 
+    z-index: 5;
 
 
 }
