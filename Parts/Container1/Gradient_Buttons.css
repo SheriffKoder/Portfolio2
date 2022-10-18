@@ -91,7 +91,7 @@
                       linear-gradient(#fff 0 0);
     
                     inset: -1.3px;
-                    padding: 1px; /* control the border thickness */
+                    padding: 1.6px; /* control the border thickness */
                     -webkit-mask-composite: xor;
                             mask-composite: exclude;
     
@@ -297,4 +297,77 @@
     
     
     
+                /*////////////////////////////////////////////////////////////////////////////*/
+                /*////////////////////////////////////////////////////////////////////////////*/
+                .blur_gradient_hover {
 
+                    background: rgba(130, 130, 130, 0.147);
+                    border: 1px solid rgba(130, 130, 130, 0.06);
+                    backdrop-filter: blur(30px);
+                    position: absolute;
+
+                    z-index: 1;
+
+                    right: 50%;
+                    top:50%;
+
+                    transform: translate(50%, -50%);
+                    
+
+                }
+
+                .blur_gradient_hover::before {
+                    content: ' '; /* Add Text for white text */
+
+                    position: absolute;
+
+                    top:0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    border-radius: inherit;
+
+                    backdrop-filter: blur(30px);
+
+                    background-image: linear-gradient(to right, var(--clr-gradient2-o) , var(--clr-gradient2-o), var(--clr-gradient1-o));                
+                    
+                    z-index: -2;
+                    opacity:0;                    
+                    transition: opacity 1000ms linear;
+
+                }
+
+                .blur_gradient_hover::after {
+
+                    content: ' '; /* Add Text for white text */
+
+                    position: absolute;
+                    backdrop-filter: blur(30px);
+
+                    top:0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    border-radius: inherit;
+
+                    background-image: linear-gradient(to right, var(--clr-gradient2-o) , var(--clr-gradient1-o), var(--clr-gradient1-o));                
+                    
+                    z-index: -1;
+                    opacity:0;                    
+                    transition: opacity 2000ms linear;
+
+                }
+
+                .blur_gradient_hover:hover::before {
+                    opacity: 1;
+                }
+
+                .blur_gradient_hover:hover::after {
+                    opacity: 1;
+                }
+
+                .blur_gradient_hover:hover {
+                    background: none;
+                }
+                
+                /*////////////////////////////////////////////////////////////////////////////*/
