@@ -23,9 +23,9 @@
     --clr-gradient3: #e234c8;
     --clr-gradient2: #00ffc3;
 
-    --clr-gradient1-o: hsla(235, 100%, 50%, 0.275);
-    --clr-gradient3-o: hsla(309, 75%, 55%, 0.255);
-    --clr-gradient2-o: hsla(166, 100%, 50%, 0.278); 
+    --clr-gradient1-o: hsla(235, 100%, 50%, 0.100);
+    --clr-gradient3-o: hsla(309, 75%, 55%, 0.100);
+    --clr-gradient2-o: hsla(166, 100%, 50%, 0.100); 
 
     --clr-socialborder:  rgb(89, 89, 89); /*152*/
     /*
