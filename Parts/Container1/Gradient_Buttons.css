@@ -303,7 +303,7 @@
 
                     background: rgba(130, 130, 130, 0.147);
                     border: 1px solid rgba(130, 130, 130, 0.06);
-                    backdrop-filter: blur(30px);
+                    backdrop-filter: blur(10px);
                     position: absolute;
 
                     z-index: 2;
@@ -334,6 +334,9 @@
                     z-index: -2;
                     opacity:0;                    
                     transition: opacity 1000ms linear;
+
+                    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+
 
                 }
 
