@@ -23,9 +23,15 @@
     --clr-gradient3: #e234c8;
     --clr-gradient2: #00ffc3;
 
+    /*colors used in mobile card box as a border */
     --clr-gradient1-o: hsla(235, 100%, 50%, 0.100);
     --clr-gradient3-o: hsla(309, 75%, 55%, 0.100);
     --clr-gradient2-o: hsla(166, 100%, 50%, 0.100); 
+
+    /* colors used in tablet box width increase background */
+    --clr-gradient1-o2: hsla(235, 100%, 50%, 0.200);
+    --clr-gradient3-o2: hsla(309, 75%, 55%, 0.200);
+    --clr-gradient2-o2: hsla(166, 100%, 50%, 0.200); 
 
     --clr-socialborder:  rgb(89, 89, 89); /*152*/
     /*
@@ -848,6 +854,7 @@ body {
         /*add for top continuation with container1 */
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    
 
 }
 
@@ -864,7 +871,7 @@ body {
     width: 100%;
 
     background: rgba(0, 0, 0, 0.0);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
 
     z-index: 1;
 
