@@ -189,6 +189,10 @@ body {
 
                 }
 
+
+                .vertical_line, .card_content {
+                    display: none;
+                }
    
 
 
@@ -271,12 +275,16 @@ body {
 
 
                 /* the card border , refer to blur_gradient_hover in Gradient css file for style */
+
+                /* the card border , refer to blur_gradient_hover in Gradient css file for style */
+
                 .card_outer {
 
-                    height: 22rem;
+                    height: 33vw;
                     max-height: 230px;
 
-                    width: 90%;
+                    width: 228px;
+
                     border-radius: 17px;
 
                     display: flex;
@@ -286,13 +294,30 @@ body {
 
                     position: relative;
 
-                    padding: 6.7px;
+                    padding: 5.7px;
+
+                    transition: width 0.5s ease-out;
 
                 }
+
+                .card_outer:hover {
+                    width: 90%;
+
+
+                }
+
+
                 
                 /* add more opacity related to the tablet query, property from Gradient_buttons.css*/
+
+                .blur_gradient_hover {
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+
+                }
                 .blur_gradient_hover:hover::before {
-                    background-image: linear-gradient(to right, var(--clr-gradient2-o2) , var(--clr-gradient2-o2), var(--clr-gradient2-o2), var(--clr-gradient1-o2));                
+                    background-image: linear-gradient(to right, var(--clr-gradient2-o2) , var(--clr-gradient2-o2), var(--clr-gradient2-o2), var(--clr-gradient1-o2));
+                    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+                
 
                 }
 
@@ -306,8 +331,8 @@ body {
                 .card_inner {
 
                     height: 100%;
-                    width: 95%; /*works when on phone small box */
-                    max-width: 216.59px; /* works when card_outer width increased */
+                    width: 100%; /*works when on phone small box */
+                    max-width: 214.63px; /* works when card_outer width increased */
                     background: rgb(134, 134, 134);
 
                     border-radius: 12px;
@@ -319,10 +344,14 @@ body {
                     height: 100%;
                     border-left: 1px solid rgba(130, 130, 130, 0.5);
                     margin-left: 6.7px;
+                    display: none;
 
                 }
 
-
+                .card_outer:hover > .vertical_line {
+                    display: block;
+                }
+                
                 .card_content {
                     
                     background: rgba(134, 134, 134, 0);
@@ -337,11 +366,13 @@ body {
                     padding: 12px 0px;
 
 
-                    transition: flex 1s linear;
+/*                  transition: flex 1s linear; 
+                    use if card outer always 90% width */
 
                     overflow-x: hidden;
                     white-space: nowrap; 
                     margin-left: -0.6px;
+                    
                     
 }
 
