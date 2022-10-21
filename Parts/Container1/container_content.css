@@ -100,7 +100,9 @@ body {
         /*        linear-gradient(to bottom, rgba(41,41,43,0) 10%,  rgba(41,41,43,0) 15%, rgba(41,41,43,255) 90% ,rgba(41,41,43,255) 100%),  
         add for bottom continuation */
 
-        height: 95vh;
+        height: 90vh;
+        min-height: 500px;
+        max-height: 850px;
 
         background-repeat: no-repeat;
         background-size: cover;
@@ -164,7 +166,7 @@ body {
 
                         .text_space .header_text_line_1 {
                             color: var(--clr-lightgrey-text);
-                            font-size: min(2.25rem,25.38px);
+                            font-size: max(2rem,25.38px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 100;
@@ -179,7 +181,7 @@ body {
                         .text_space .header_text_line_2 {
                             color: var(--clr-themeColor);
 
-                            font-size: min(3.55rem,40.044px);
+                            font-size: max(3rem,40.044px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 500;
@@ -192,7 +194,7 @@ body {
 
                         .text_space .header_text_line_3 {
                             color: var(--clr-lightgrey-text);
-                            font-size: min(1.15rem,12.97px);
+                            font-size: max(1.1rem,11px);
                             font-weight: 200;
                             word-spacing: 0.05em;
 
@@ -258,7 +260,7 @@ body {
 
 
 /* Tablet Styles */
-@media only screen and (min-width: 471px) and (max-width: 800px) {
+@media only screen and (min-width: 471px) and (max-width: 1200px) {
 
     html {
         font-size: 3vmin ;
@@ -277,6 +279,8 @@ body {
         add for bottom continuation */
 
         height: 95vh;
+        min-height: 400px;
+        max-height: 700px;
 
         background-repeat: no-repeat;
         background-size: cover;
@@ -341,7 +345,7 @@ body {
 
                         .text_space .header_text_line_1 {
                             color: var(--clr-lightgrey-text);
-                            font-size: min(2.25rem,25.38px);
+                            font-size: max(2rem,25.38px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 100;
@@ -356,7 +360,7 @@ body {
                         .text_space .header_text_line_2 {
                             color: var(--clr-themeColor);
 
-                            font-size: min(3.55rem,40.044px);
+                            font-size: max(3rem,40.044px);
                             word-spacing: 0.05em;
                             text-transform: uppercase;
                             font-weight: 500;
@@ -369,13 +373,14 @@ body {
 
                         .text_space .header_text_line_3 {
                             color: var(--clr-lightgrey-text);
-                            font-size: min(1.15rem,12.97px);
+                            font-size: max(0.7rem,12px);
                             font-weight: 200;
                             word-spacing: 0.05em;
 
                             text-align: center;
 
                             margin: 0 0 min(2rem,22.56px) 0;
+                            max-width: 647px;
 
                         }
 
@@ -431,7 +436,7 @@ body {
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
 /* Desktop screen */
-@media only screen and (min-width: 801px) and (max-width: 1500px){
+@media only screen and (min-width: 1201px) and (max-width: 1500px){
 
 
     html {
@@ -557,6 +562,7 @@ body {
                             margin: 0 0 min(2rem,22.56px) 0;
 
                             padding-right: 60%;
+                            
 
                         }
 
