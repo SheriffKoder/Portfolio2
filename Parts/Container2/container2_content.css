@@ -96,14 +96,13 @@ body {
     
     
         width:100vw;
-        min-height: 100vh;
 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
 
-        padding-top: min(6vh, 50px);
+        padding: min(7vh,80px) 0;
 
         position: relative;
 
@@ -160,9 +159,11 @@ body {
 
                     height: 22rem;
                     max-height: 230px;
+                    min-height: 165px;
 
                     width: 22rem;
                     max-width: 230px;
+                    min-width: 165px;
                     border-radius: 17px;
 
                     display: flex;
@@ -241,6 +242,8 @@ body {
         background-size: contain;
 
     }
+
+   
 
 
     /* blur background effect (between image and boxes)*/
