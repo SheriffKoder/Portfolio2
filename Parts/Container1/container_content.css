@@ -101,8 +101,8 @@ body {
         add for bottom continuation */
 
         height: 90vh;
-        min-height: 500px;
-        max-height: 850px;
+        min-height: 600px;
+        max-height: 800px;
 
         background-repeat: no-repeat;
         background-size: cover;
@@ -863,6 +863,24 @@ body {
     
 
 }
+
+video {
+    display: none;
+
+  }
+/*
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(1);
+    opacity: 0.2;
+
+  }
+*/
 
 
 /* blur background effect (between image and boxes)*/
