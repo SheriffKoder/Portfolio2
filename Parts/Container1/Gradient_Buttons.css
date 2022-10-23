@@ -21,7 +21,7 @@
         
                     }
 
-
+                /*////////////////////////////////////////////////*/
                 /*hover effect with animation*/
                 .Gradient_Text_hover2 {
                     background: linear-gradient(to right, var(--clr-gradient2) 15%, var(--clr-gradient1) 20%, #fff 30%, #FFF 100%);
@@ -31,37 +31,69 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     text-shadow: none;
-
-                    z-index: 2;
-
-                    
-
-
-
-
                     
                     
                 }
                     .Gradient_Text_hover2:hover {
 
-                        animation-name: shine;
-                        animation-duration: 500ms;
+                        animation-name: shine-in;
+                        animation-duration: 1000ms;
                         animation-iteration-count: 1;
                         animation-timing-function: linear;
                         animation-fill-mode: forwards;
 
-    
-
                 }
 
-
-                @keyframes shine {
+                @keyframes shine-in {
                   to {
                     background-size: 300% auto;
                     opacity: 0.8;
 
                   }
                 }
+
+
+                /* text color on hover out becomes white gradually as border */
+
+                .Gradient_Text_hoverout {
+                    animation-name: shine-out;
+                    animation-duration: 500ms;
+                    animation-iteration-count: 1;
+                    animation-timing-function: linear;
+                    animation-fill-mode: forwards;
+                }
+
+
+                @keyframes shine-out {
+                    0% {
+
+                        background: linear-gradient(to right, var(--clr-gradient2) 15%, var(--clr-gradient1) 20%, #fff 30%, #FFF 100%);
+
+                    background-size: 300% auto;
+                    
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: none;
+                        filter: brightness(100%);
+
+                    }
+
+
+
+                    100% {
+
+                        background: linear-gradient(to right, var(--clr-gradient2) 15%, var(--clr-gradient1) 20%, #fff 30%, #FFF 100%);
+
+                    background-size: 300% auto;
+                    
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: none;
+                        filter: brightness(500%) grayscale(1);
+
+                    }
+
+                  }
     
     /*/////////////////////////////////////////////////////////////////////////////*/
     
@@ -352,7 +384,6 @@
 
                     transform: translate(50%, -50%);
                     
-                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 
                 }
 
@@ -374,8 +405,6 @@
                     z-index: -2;
                     opacity:0;                    
                     transition: opacity 1000ms linear;
-
-                    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
 
 
                 }
