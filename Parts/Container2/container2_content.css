@@ -74,7 +74,6 @@ body {
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
 
-
 }
 
 *, *::before, *::after {
@@ -96,6 +95,7 @@ body {
     
     
         width:100vw;
+        min-width: 300px;
 
         display: flex;
         flex-direction: column;
@@ -150,6 +150,7 @@ body {
             height: 300px;
 
             position: relative;
+            
 
         }
 
@@ -170,8 +171,6 @@ body {
                     align-items: center;
                     justify-content: center;
 
-                    position: relative;
-
                     
 
                 }
@@ -191,13 +190,100 @@ body {
                 }
 
 
-                .vertical_line, .card_content {
+                .vertical_line {
                     display: none;
                 }
    
 
+                /***************************************/
 
 
+                /* styling */
+                .card_inner__flip {
+
+                    position: absolute; /* both absolute to the blur gradient*/
+                    opacity: 1;     /* side 1 : card inner opacity 1 */
+                    transition: opacity 0.6s ease-out;    /* delay in animation */
+
+                  }
+
+
+                  .card_content__flip {
+
+                    position: absolute; /* both absolute to the blur gradient*/
+
+                    width: 95%;
+                    height: 95%;
+                    border-radius: 12px;                    
+                    background: rgba(134, 134, 134, 0.478);
+
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    transform: rotateY(180deg);
+                    opacity: 0;     /* side 1: not need to show it */
+
+                    transition: opacity 0.6s ease-in;    /* delay in animation reverse timing */
+
+                    mix-blend-mode: screen;
+
+                  }
+
+                  .card_content .Text_Card_Mob {
+                    padding: 8px;
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: 500;
+
+                  }
+
+                  .card_content .Text_Card {
+                    display: none;
+                  }
+
+                  .Text_Link_Card {
+                        background-color: white;
+                        height: 12%;
+                        width: 40%;
+                        border-radius: 7px;
+                        color: black;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        font-weight: 900;
+                        font-size: 15px;
+
+                  }
+
+
+                /* animation */
+                .card_space__flip {
+                    perspective: 1000px;
+
+                }
+
+                .blur_gradient_hover__flip {
+                    position: relative;
+                    
+                    transition: transform 0.6s;
+                    transform-style: preserve-3d;
+                }
+
+                .card_space__flip:hover .blur_gradient_hover__flip {
+                    transform: translate(50%, -50%) rotateY(180deg);
+                  }
+
+                .card_space__flip:hover .card_content__flip {
+                    opacity: 1;
+                }
+                .card_space__flip:hover .card_inner__flip {
+                    opacity: 0;
+                }
 
 
 }

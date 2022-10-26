@@ -57,7 +57,7 @@
 
                 .Gradient_Text_hoverout {
                     animation-name: shine-out;
-                    animation-duration: 500ms;
+                    animation-duration: 1000ms;
                     animation-iteration-count: 1;
                     animation-timing-function: linear;
                     animation-fill-mode: forwards;
@@ -90,6 +90,7 @@
                     -webkit-text-fill-color: transparent;
                     text-shadow: none;
                         filter: brightness(500%) grayscale(1);
+                        mix-blend-mode: screen;
 
                     }
 
@@ -383,6 +384,7 @@
                     top:50%;
 
                     transform: translate(50%, -50%);
+                    
                     
 
                 }
