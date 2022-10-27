@@ -185,7 +185,7 @@ body {
                             color: var(--clr-themeColor);
 
                             font-size: max(3rem,40.044px);
-                            word-spacing: 0.05em;
+                            letter-spacing: 0.0em;
                             text-transform: uppercase;
                             font-weight: 500;
 

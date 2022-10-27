@@ -176,6 +176,18 @@ body {
 
                 }
 
+                    /* add more opacity related to the tablet query, property from Gradient_buttons.css*/
+                    /* switch colors as the card will be flipped but on hover only so it can seem right position on hover out finish*/
+
+                    .blur_gradient_hover:hover::before {
+                        background-image: linear-gradient(to right, var(--clr-gradient1-o) , var(--clr-gradient2-o), var(--clr-gradient2-o)) !important;                
+                    }
+    
+                    .blur_gradient_hover:hover::after {
+                        background-image: linear-gradient(to right, var(--clr-gradient1-o) , var(--clr-gradient1-o), var(--clr-gradient2-o)) !important;                
+    
+                    }
+
 
                 /* the card content space */
                 .card_inner {
@@ -187,8 +199,23 @@ body {
                     border-radius: 12px;
                     box-shadow: 0;
 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
 
                 }
+
+                        .text_card_front {
+                            color: rgb(228, 228, 228);
+                            font-size: max(3rem,40.044px);
+                            letter-spacing: 0.05em;
+                            margin: 0;
+                            font-weight: 600;
+                            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.716);
+
+                        }
+
 
 
                 .vertical_line {
@@ -228,7 +255,7 @@ body {
                     opacity: 0;     /* side 1: not need to show it */
 
                     transition: opacity 0.5s step-start;    /* delay in animation reverse timing */
-
+                    transition-delay: 0.2s;
                     mix-blend-mode: screen;
 
                   }
@@ -238,6 +265,8 @@ body {
                     text-align: center;
                     font-size: 12px;
                     font-weight: 500;
+                    font-size: min(1.5vmax, 12px);
+
 
                   }
 
@@ -257,7 +286,7 @@ body {
                         align-items: center;
 
                         font-weight: 900;
-                        font-size: 15px;
+                        font-size: min(1.5vmax, 12px);
 
                   }
 
@@ -289,6 +318,8 @@ body {
                 }
 
 
+
+
 }
 
 
@@ -315,6 +346,7 @@ body {
         padding-top: min(6vh, 50px);
 
         position: relative;
+        perspective: 1000px;
 
     }
 
@@ -394,9 +426,12 @@ body {
 
                 .card_outer:hover {
                     width: 90%;
+                    max-width: 650px;
 
 
                 }
+
+ 
 
 
                 
@@ -418,6 +453,10 @@ body {
 
                 }
 
+                .Text_Card_Mob {
+                    display: none;
+                }
+
 
                 /* the card content space */
                 .card_inner {
@@ -425,12 +464,26 @@ body {
                     height: 100%;
                     width: 100%; /*works when on phone small box */
                     max-width: 214.63px; /* works when card_outer width increased */
-                    background: rgb(134, 134, 134);
+                    background: rgba(174, 174, 174, 0.328);
 
                     border-radius: 12px;
                     box-shadow: 0;
 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
                 }
+
+                        .text_card_front {
+                            color: rgb(228, 228, 228);
+                            font-size: min(5.5rem, 50px);
+                            margin: 0;
+                            font-weight: 600;
+                            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.716);
+
+                        }
 
                 .vertical_line {
                     height: 100%;
@@ -523,6 +576,8 @@ body {
 
 
                         }
+
+
 
 }
 
