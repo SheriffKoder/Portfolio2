@@ -371,7 +371,6 @@
                 /*////////////////////////////////////////////////////////////////////////////*/
                 /*////////////////////////////////////////////////////////////////////////////*/
 
-                @media only screen and (min-width: 921px) and (max-width: 1500px){
 
                 .blur_gradient_hover {
 
@@ -386,9 +385,9 @@
                     top:50%;
 
                     transform: translate(50%, -50%);
-                    
-
                 }
+
+                
 
                 @media only screen and (min-width: 921px) and (max-width: 1500px){
 
