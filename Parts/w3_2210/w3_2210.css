@@ -1,0 +1,503 @@
+
+
+/*////////////////////////////////////////////////////////////////////*/
+
+#overlay {
+    position: fixed;
+    width: 100%; /* 100% */
+    height: 300px; /* 100% */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0,100,40,0.3);
+    
+    z-index: 2;
+    display: none;
+
+    
+    cursor: pointer;
+  }
+
+  #overlay p {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+
+/*////////////////////////////////////////////////////////////////////*/  
+/* on fullscreen style */
+
+  :fullscreen {
+    /*background-color: yellow;*/
+  }
+
+    #fs-toggle:not(:fullscreen) {
+        background-color: #faa;
+      }
+      
+      #fs-toggle:fullscreen {
+        background-color: #3b0;
+      }
+
+
+/*////////////////////////////////////////////////////////////////////*/  
+
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+
+    line-height: 1;
+    background: none;
+    border: 0;
+
+    padding: 0.5em 1.5em;
+
+}
+
+.btn-1, .btn-2 {
+    color: #386397;
+    border: 2px solid red;
+
+    outline: 2px solid #386397;  /*like border but starts after*/
+    outline-offset: -2px; /* offset location overlaps border location now */
+
+    transition: outline-offset 250ms ease;
+
+
+}
+
+.btn-1:hover, .btn-1:focus {    /* focus: keyboard hover*/
+    outline-offset: 2px; /* change offset location to be out of border */
+}
+
+.btn-2:hover, .btn-2:focus {    /* focus: keyboard hover*/
+    outline-offset: -5px; /* change offset location to be inside of border */
+}
+
+.btn-3 {
+    background : #386397;
+    border: 2px solid #386397;
+    color: #ffff;
+
+    outline: 2px solid #fff;
+    outline-offset: 0px;
+    transition: outline-offset 250ms ease;
+
+
+}
+
+.btn-3:hover, .btn-3:focus {    /* focus: keyboard hover*/
+    outline-offset: -4px;
+
+}
+
+.btn-4 {
+    outline: 2px solid #386397;
+    color: #386397;
+    border: 2px solid #386397;
+    outline-offset: -4px;
+    transition: outline-offset 250ms ease,
+                outline-width 250ms ease;
+
+}
+
+.btn-4:hover, .btn-4:focus {    /* focus: keyboard hover*/
+    outline-offset: -2px;
+    outline-width: 3px;
+
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*justify-self and margin-direction: autos */
+    .test0910 {
+        height: 200px;
+        width: 200px;
+        background: #222;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    .element2, .element3 {
+        justify-self: end; /*works on grid*/
+        color: white;
+        margin-left: auto;  /*works like justify self*/
+        margin-right: auto;  /*works like justify self*/
+        /*both directions center */
+        /*if used on two items, the remaining space will be split evenly responsive auto between them */
+
+    }
+
+    /* justification of an element within its containing block */
+    /*self-end: The element is packed along its own ending edge, which depends on its direction.*/
+
+
+    /* another way of bordering all children*/
+    .test0910 > * {
+        outline: 2px solid limegreen;
+    }
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*radial-gradient and conic gradient */
+
+
+/* By default, shape is ellipse, size is farthest-corner, and position is center. */
+/* shape can be circle or ellipse */
+/* closest-side, farthest-size, closest-corner, farthest-corner*/
+.grad1 {
+
+    height: 200px;
+    width: 300px;
+/*    background-image:  radial-gradient(circle farthest-side at 60% 55% , red 10%, yellow 25%, green 60% );*/
+    background-image:  repeating-radial-gradient(circle farthest-side at 60% 55% , #00a 10%, #00d 25%, #aaa 60% );
+
+}
+
+
+
+/* By default, angle is 0deg and position is center. */
+.grad2 {
+
+    height: 200px;
+    width: 200px;
+/*    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg); */
+    background-image: conic-gradient( from 90deg at 60% 60% ,red 45deg, yellow 60deg, green 210deg);
+/*    background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+
+    border-radius: 50%;
+  
+
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+
+/*moving the absolute position with js
+CSS #188 html #101 Js #33 */
+.testdiv_1710 {
+    height: 100px; 
+    width: 100px; 
+    background-color: red;
+
+    position: absolute;
+
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/* dropdown menu */
+
+/*child selectors because want only the li that are directly under .menu */
+
+
+
+  .dropdown {
+    position: relative;    
+
+  }
+
+        .dropdown > span {
+            z-index: 2;
+            position: relative;  /* This is important! */
+            cursor: pointer;
+          
+        }
+
+
+
+    .features-menu {                    /* Add this as a new rule */
+        display: none;
+    }
+          
+
+    .dropdown:hover .features-menu {
+
+        width: 130px;
+        background: #B2D6FF;
+
+        position: absolute;
+        top: -25px;
+        left: -30px;
+
+        border-radius: 5px;
+        padding-top: 60px;
+
+        display: flex;
+        flex-direction: column;
+
+        z-index: 1;
+
+  }
+
+                    .features-menu li {
+                        list-style: none;
+                        border-bottom: 1px solid #FFF;
+                    
+                        padding: 0 40px 10px 20px;
+                        margin: 10px;
+                    }
+                    
+                    .features-menu li:last-of-type {
+                        border-bottom: none;
+                    }
+
+    
+                    .button:link,                 /* Change this */
+                    .button:visited {             /* Change this */
+                      display: block;             /* Add this */
+                      text-decoration: none;      /* Add this */
+                    
+                      color: #FFF;                /* The rest is the same */
+                      background-color: #5995DA;
+                      font-weight: bold;
+                      padding: 20px;
+                      text-align: center;
+                      border: 2px solid #5D6063;
+                      border-radius: 5px;
+                    
+                      width: 200px;
+                    }
+
+                    .button:visited:hover {
+                        color: rgb(63, 63, 63);
+                        background-color: #eded76;  /* Light blue */
+                    }
+
+                    /* on hover on visited only */
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/* reflection of a div mirror */
+
+/*
+    <div class="test_div1810">
+        DIV
+        <div class="test_div1810 blur_mirror">
+            DIV
+*/
+
+
+.test_div1810 {
+    height: 100px;
+    width: 200px;
+    background: red;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    margin-left: 100px;
+
+    /*just shaping */
+
+    position: relative; /**/
+}
+
+
+
+.blur_mirror {
+
+    position: absolute;
+    top:70%;
+    right: 0;
+
+    transform: perspective(1em) rotateX(225deg)  scale(1.2,0.35)  ;
+    filter: blur(0.1em);
+
+    opacity: 0.1;
+    transition: opacity 1s linear;
+
+    border-radius: 20%;
+}
+
+.test_div1810:hover .blur_mirror {
+
+    opacity: 0.3;
+
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+
+/*
+responsive images
+The device’s dimensions
+The image’s dimensions
+The device’s screen resolution
+
+retina pixel = 4 standard pixels
+
+so a high resolution image file 1000x500px for retina to be displayed well
+which is the same as should be 500x250px on standard, on retina will be fuzzy
+
+but 1000x500px is too much for a standard screen
+
+svg images are vector based so will scale up with the resolution without pixels
+
+responsive image optimization
+(1) standard screen
+-retina ok with standard quality
+-desktop wide image
+-mobile taller image
+
+(1)
+<img    src="image-small.jpg"
+        srcset="image-small.jpg 1x,
+        srcset="image-big.jpg   2x "
+        
+        style="max-width: 500px />
+
+srcset points to list of alternative image files + property
+on 1x(standard device) use small
+and on 2x(retina device) use big
+devices that do not understand srcset will use the src as a fallback
+
+(2) optimize larger images based on their final rendered dimensions
+not just the screen resolution
+
+<img    src="image-small.jpg"
+        srcset="image-small.jpg 1000w,
+        srcset="image-big.jpg   2000w "
+        
+        sizes="(max-width: 960px) 960px 100vw"  />
+
+tells the image is 1000px wide 
+set of media queries, 
+when the screen is at least 960px wide, the image will be 960px wide
+otherwise the 100vw default value
+
+remember we keep 1000px standard for retina screens can use it 
+as long their screens are less than 500px 500
+
+//////////////////////////////////////
+
+optimizing layouts
+
+<picture>
+      <source media='(min-width: 401px)'
+              srcset='images/photo-big.jpg'/>
+      <img src='images/photo-small.jpg'/>
+
+</picture>
+
+
+//similar to media queries
+//when the image should be loaded
+//which image file
+//img tag is a fallback for older browsers
+
+*/
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/* 3d card flip */
+
+.bg2810 {
+    height: 205px;
+    width: 500px;
+
+    background: linear-gradient(to right, rgb(173, 0, 255), rgb(102, 0, 226));
+}
+
+.window2 { /*camera*/
+    perspective: 2000px;
+    perspective-origin: 300px 100px;
+
+
+}
+
+.scene2 {   /* items space */
+
+    height: 200px;
+    width: 300px;
+
+
+    border: 1px solid black;
+    border-radius: 30px;
+
+
+
+    /******************************/
+    position: absolute;
+    transform-style: preserve-3d;
+    /******************************/
+
+    top: 00px; /*change to test on other elements*/
+}
+
+.card2 {
+
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, rgb(173, 0, 255), rgb(102, 0, 226));
+    border: 1px solid black;
+
+
+    /******************************/
+    position: absolute;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    transition: all 0.5s linear;
+    /******************************/
+
+
+    top: 50%;
+    left: 40%;
+}
+
+.card3 {
+
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, rgba(129, 177, 255, 0.543), rgba(80, 219, 212, 0.378));
+    border: 1px solid black;
+    color:rgba(63, 63, 63, 0.494);
+
+    /******************************/
+    position: absolute;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    transition: all 0.5s linear;
+    /******************************/
+
+
+    top: 50%;
+    left: 40%;
+}
+
+/******************************/
+@keyframes rotateCard {
+    to {transform: translate(-50%, -50%) rotateY(60deg);}
+
+}
+
+@keyframes rotateCard2 {
+    to {transform: translate(-50%, -50%) rotateY(60deg); left: 50%;}
+
+}
+
+/******************************/
+.scene2:hover .card2 {
+    animation: rotateCard 0.5s forwards linear;
+}
+
+.scene2:hover .card3 {
+    animation: rotateCard2 0.5s forwards linear;
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/

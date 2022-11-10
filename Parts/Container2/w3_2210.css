@@ -1,0 +1,219 @@
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/* 3d card flip */
+
+.bg2810 {
+    height: 205px;
+    width: 500px;
+
+    background: linear-gradient(to right, rgb(173, 0, 255), rgb(102, 0, 226));
+}
+
+@media only screen and (max-width: 640px) {
+.window2 { /*camera*/
+    perspective: 2000px;
+    perspective-origin: 300px 100px;
+
+    position: relative;
+    z-index: 10;
+    left: 100px;
+
+}
+
+.scene2 {   /* items space */
+
+    height: 200px;
+    width: 300px;
+
+
+    border: 1px solid black;
+    border-radius: 30px;
+
+
+
+    /******************************/
+    position: absolute;
+    transform-style: preserve-3d;
+    /******************************/
+
+    top: 00px; /*change to test on other elements*/
+}
+
+.card2 {
+
+    /*
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, rgb(173, 0, 255), rgb(102, 0, 226));
+    border: 1px solid black;
+    */
+
+    /******************************/
+    position: absolute;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    /******************************/
+
+
+    top: 50%;
+    left: 50%;
+
+    transition: all 1s ease-out;
+}
+
+.card3 {
+
+        /*
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, rgba(129, 177, 255, 0.543), rgba(80, 219, 212, 0.378));
+    border: 1px solid black;
+    color:rgba(63, 63, 63, 0.494);
+*/
+    /******************************/
+    /*position: absolute;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    transition: all 0.5s linear;
+    /******************************/
+
+    
+    top: 50%;
+    left: 50%;
+
+    transition: transform .5s;
+
+}
+
+/******************************/
+@keyframes rotateCard {
+    to {transform: translate(-50%, -50%) rotateY(180deg);}
+
+}
+
+@keyframes rotateCard2 {    /*mirror*/
+    to {transform: translate(-50%, -50%) rotateY(0deg);}
+
+}
+
+/******************************/
+.scene2:hover .card2 {
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.scene2:hover .card3 {
+    transform: translate(-50%, -50%) rotateY(0deg);
+}
+
+
+
+
+
+
+
+}
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+
+
+@media only screen and (min-width: 641px) and (max-width: 920px) {
+
+
+    .window22 { /*camera*/
+        perspective: 2000px;
+        perspective-origin: 300px 100px;
+    
+        z-index: 10;
+        left: -30%;
+        top: 0;
+
+        height: 100%;
+                    width: 100%; /*works when on phone small box */
+                    max-width: 214.63px; /* works when card_outer width increased */
+    
+    }
+    
+    .scene22 {   /* items space */
+    
+        height: 100%;
+        width: 100%; /*works when on phone small box */
+        max-width: 214.63px; /* works when card_outer width increased */
+    
+    
+        border-radius: 30px;
+    
+    
+    
+        /******************************/
+        position: relative;
+        transform-style: preserve-3d;
+        /******************************/
+    
+        top: 00px; /*change to test on other elements*/
+    }
+    
+    .card22 {
+    
+        /*
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(to bottom, rgb(173, 0, 255), rgb(102, 0, 226));
+        border: 1px solid black;
+        */
+    
+        /******************************/
+        position: absolute;
+        transform: translate(-50%, -50%) rotateY(0deg);
+        /******************************/
+    
+    
+        top: 50%;
+        left: 50%;
+    }
+    
+    .card33 {
+    
+            
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(to bottom, rgba(129, 177, 255, 0.543), rgba(80, 219, 212, 0.378));
+        border: 1px solid black;
+        color:rgba(63, 63, 63, 0.494);
+    
+        /******************************/
+        position: absolute;
+        transform: translate(-50%, -50%) rotateY(0deg);
+        transition: all 0.5s linear;
+        /******************************/
+    
+        
+        top: 50%;
+        left: 50%;
+    }
+    
+    /******************************/
+    @keyframes rotateCard22 {
+        to {transform: translate(-50%, -50%) rotateY(0deg) scale(1.1);}
+    
+    }
+    
+    @keyframes rotateCard222 {    /*mirror*/
+        to {transform: translate(-50%, -50%) rotateY(60deg) scale(2 , 1); left: 60%;}
+    
+    }
+    
+    /******************************/
+    .card_outer:hover .card22 {
+        animation: rotateCard22 0.5s forwards linear;
+    }
+    
+    .card_outer:hover .card33 {
+        animation: rotateCard222 0.5s forwards linear;
+    }
+    
+    
+
+
+
+}
