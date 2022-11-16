@@ -453,16 +453,32 @@
 
                 }
 
-                .blur_gradient_hover:hover::before {
+                .blur_gradient_hover:hover::before, .blur_gradient_hover:focus::before  {
                     opacity: 1;
                 }
 
-                .blur_gradient_hover:hover::after {
+                .blur_gradient_hover:hover::after, .blur_gradient_hover:focus::after {
                     opacity: 1;
                 }
 
-                .blur_gradient_hover:hover {
+                .blur_gradient_hover:hover, .blur_gradient_hover:focus {
                     background: none;
                 }
                 
                 /*////////////////////////////////////////////////////////////////////////////*/
+
+                .card_space:hover > .mirror_card .blur_gradient_hover::before  {
+                    opacity: 1;
+                    background-image: linear-gradient(to right, var(--clr-gradient2-o) , var(--clr-gradient2-o), var(--clr-gradient1-o)) !important;                
+
+                }
+
+                .card_space:hover > .mirror_card .blur_gradient_hover::after  {
+                    opacity: 1;
+                    background-image: linear-gradient(to right, var(--clr-gradient2-o) , var(--clr-gradient1-o), var(--clr-gradient1-o)) !important;                
+
+                }
+
+                .card_space:hover > .mirror_card .blur_gradient_hover {
+                    background: none;
+                }
