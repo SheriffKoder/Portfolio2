@@ -328,6 +328,20 @@ body {
                     display: none;
                 }
 
+                .message_space_cont2 {
+
+                    display: none;
+        
+                }
+
+                .header_space_cont2 {
+                    display: none;
+
+                }
+                .mirror_card {
+                    display: none;
+
+                }
 
 }
 
@@ -651,6 +665,27 @@ body {
                             display: none;
                         }
 
+                        .message_space_cont2 {
+
+                            display: none;
+                
+                        }
+
+                        .header_space_cont2 {
+                            display: none;
+    
+                        }
+
+                        .main_card {
+                            width: 100vw;
+                            height: 100%;
+                        }
+                        .mirror_card {
+                            display: none;
+
+                        }
+
+
 
 
 }
@@ -675,12 +710,13 @@ body {
             width:100vw;
     
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
     
     
             position: relative;
+            padding-top: min(10vh,100px);
 
 
         }
@@ -717,13 +753,20 @@ body {
             backdrop-filter: blur(2px);
     
             z-index: 1;
-
-
-
-    
-    
     
         }
+
+
+        .cards_space_cont2 {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+
+
+
+
             /* the column space the card is margined in */
             .card_space {
     
@@ -731,7 +774,7 @@ body {
                 border: 3px solid rgba(65, 125, 193, 0.0);
                 width: 350px;
                 height: 100%;
-                margin: 300px 0;
+                margin: 100px 0 0 0;
 
                 position: relative;
                 
@@ -740,6 +783,7 @@ body {
                 z-index: 2;
                 */
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
 
@@ -767,6 +811,10 @@ body {
     
                     }
 
+
+                    .blur_mirror3 {
+
+                    }
                     .blur_mirror {
 
 
@@ -933,7 +981,7 @@ body {
                       }
     
                       .card_content .Text_Card_Mob {
-                        padding: 8px;
+                        /*padding: 8px;
                         text-align: center;
                         font-size: 12px;
                         font-weight: 500;
@@ -941,25 +989,41 @@ body {
                         position: absolute;
                         top:140%;
                         white-space: nowrap;
-
-
-
-                      }
-
-
-
-                      .card_content .first_text {
+                        */
+                        display: none;
 
 
                       }
 
-                      .Text_Card_Mob .second{
-                        left: 0px;
-                      }
+                      .message_space_cont2 {
 
-                      .Text_Card_Mob .third{
-                        left: 0px;
-                      }
+                        margin: 100px 0 200px 0;
+                        z-index: 2;
+                        color: white;
+
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: 500;
+                        font-size: min(1.5vmax, 12px);
+                        white-space: nowrap;
+
+                    }
+
+                    .header_space_cont2 {
+                        margin: 100px 0 20px 0;
+                        z-index: 2;
+                        color: white;
+
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 500;
+                        white-space: nowrap;
+                    }
+
+
+
+
+
 
                       .mirror_layout_text {
 
@@ -1029,6 +1093,28 @@ body {
                     }
 
     
+                        .main_card {
+
+                        }
+                        .mirror_card {
+
+
+                            transform: perspective(200px) rotateX(225deg)  scale(1.1,0.35);
+                            z-index: 2;
+                            opacity: 0.1;
+                            pointer-events: none;
+                            filter: blur(1px);
+                            position: absolute;
+                            top: 70%;
+
+
+                        }
+
+                        .message_space_cont2 {
+                            transition: opacity 1s linear;
+                        }
+
+
     
 
 }
