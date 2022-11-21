@@ -466,6 +466,7 @@ body {
 
         height: 120vh;
         min-height: 600px;
+        max-height: 900px;
 
         display: flex;
         flex-direction: row;
@@ -501,7 +502,7 @@ body {
             }
             
             .content_space1 {
-                flex: 1;
+                flex: 0.7;
                 min-height: min(17vh, 92px);
                 
 
