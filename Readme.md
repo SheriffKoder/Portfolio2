@@ -15,4 +15,4 @@ with gradient buttons, borders, CSS 3D Cards & text
 
 >**How to use**
 - Latest progress at ./Parts/Container1/index.html
-- [View the page](https://htmlpreview.github.io/?https://github.com/SheriffKoder/Portfolio2/blob/main/Parts/Container1/index.html) and hover over the web page's elements to see the effects.
+- [View the page](https://htmlpreview.github.io/?https://github.com/SheriffKoder/Side-Project--Gradients-3D-Cards/blob/main/Parts/Container1/index.html) and hover over the web page's elements to see the effects.
