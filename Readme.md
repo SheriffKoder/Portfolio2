@@ -1,10 +1,10 @@
-# Side project: Hero Component 
-with gradient buttons, borders, CSS 3D Cards & text
+# Side project: Gradients & 3D Cards
+A Hero component with gradient buttons, borders, CSS 3D Cards & text
 
 ![screenshot](screenshot.png)
 
 >**Main Features**
-- Gradient animating navigation buttons
+- Gradient animating backgrounds for navigation buttons
 - Gradient animating rounded button border
 - Sticky transparent to background social media links with multiple styles depending on the screen width
 - 3D cards representation with a mirror effect and animating background color
